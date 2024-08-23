@@ -1,0 +1,191 @@
+/*home animation*/
+.home_animation {
+	width:80vh;
+	height:80vh;
+	position:absolute;
+	top:10vh;
+	right:10vh;
+	z-index:98;
+}
+
+.home_animation .box {
+	position: absolute;
+	top:0;
+	left:0;
+	width:80vh;
+	height:80vh;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+}
+
+.home_animation .box:nth-child(1) {
+	background-image:url('home_01.svg');
+	animation:up .25s 4s forwards ease-out;
+	-o-animation:up .25s 4s forwards ease-out;
+	-moz-animation:up .25s 4s forwards ease-out;
+	-webkit-animation:up .25s 4s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(2) {
+	background-image:url('home_02.svg');
+	animation:up .25s 4.125s forwards ease-out;
+	-o-animation:up .25s 4.125s forwards ease-out;
+	-moz-animation:up .25s 4.125s forwards ease-out;
+	-webkit-animation:up .25s 4.125s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(3) {
+	background-image:url('home_03.svg');
+	animation:up .25s 4.25s forwards ease-out;
+	-o-animation:up .25s 4.25s forwards ease-out;
+	-moz-animation:up .25s 4.25s forwards ease-out;
+	-webkit-animation:up .25s 4.25s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(4) {
+	background-image:url('home_04.svg');
+	animation:up .25s 4.375s forwards ease-out;
+	-o-animation:up .25s 4.375s forwards ease-out;
+	-moz-animation:up .25s 4.375s forwards ease-out;
+	-webkit-animation:up .25s 4.375s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(5) {
+	background-image:url('home_05.svg');
+	animation:bounce 40s 4s forwards ease-out;
+	-o-animation:bounce 40s 4s forwards ease-out;
+	-moz-animation:bounce 40s 4s forwards ease-out;
+	-webkit-animation:bounce 40s 4s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(6) {
+	background-image:url('home_06.svg');
+	animation:bounce 40s 4.25s forwards ease-out;
+	-o-animation:bounce 40s 4.25s forwards ease-out;
+	-moz-animation:bounce 40s 4.25s forwards ease-out;
+	-webkit-animation:bounce 40s 4.25s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(7) {
+	background-image:url('home_08.svg');
+	animation:up .25s 4.675s forwards ease-out;
+	-o-animation:up .25s 4.675s forwards ease-out;
+	-moz-animation:up .25s 4.675s forwards ease-out;
+	-webkit-animation:up .25s 4.675s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(8) {
+	background-image:url('home_07.svg');
+	animation:bounce 40s 4.5s forwards ease-out;
+	-o-animation:bounce 40s 4.5s forwards ease-out;
+	-moz-animation:bounce 40s 4.5s forwards ease-out;
+	-webkit-animation:bounce 40s 4.5s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(9) {
+	background-image:url('home_14.svg');
+	animation:bounce 40s 5.25s forwards ease-out;
+	-o-animation:bounce 40s 5.25s forwards ease-out;
+	-moz-animation:bounce 40s 5.25s forwards ease-out;
+	-webkit-animation:bounce 40s 5.25s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(10) {
+	background-image:url('home_09.svg');
+	animation:up .25s 4.5s forwards ease-out;
+	-o-animation:up .25s 4.5s forwards ease-out;
+	-moz-animation:up .25s 4.5s forwards ease-out;
+	-webkit-animation:up .25s 4.5s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(11) {
+	background-image:url('home_12.svg');
+	animation:up .25s 4.75s forwards ease-out;
+	-o-animation:up .25s 4.75s forwards ease-out;
+	-moz-animation:up .25s 4.75s forwards ease-out;
+	-webkit-animation:up .25s 4.75s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(12) {
+	background-image:url('home_13.svg');
+	animation:up .25s 4.875s forwards ease-out;
+	-o-animation:up .25s 4.875s forwards ease-out;
+	-moz-animation:up .25s 4.875s forwards ease-out;
+	-webkit-animation:up .25s 4.875s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(13) {
+	background-image:url('home_11.svg');
+	animation:up .25s 5s forwards ease-out;
+	-o-animation:up .25s 5s forwards ease-out;
+	-moz-animation:up .25s 5s forwards ease-out;
+	-webkit-animation:up .25s 5s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(14) {
+	background-image:url('home_10.svg');
+	animation:up .25s 5.125s forwards ease-out;
+	-o-animation:up .25s 5.125s forwards ease-out;
+	-moz-animation:up .25s 5.125s forwards ease-out;
+	-webkit-animation:up .25s 5.125s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(15) {
+	background-image:url('home_17.svg');
+	animation:up .25s 5.25s forwards ease-out;
+	-o-animation:up .25s 5.25s forwards ease-out;
+	-moz-animation:up .25s 5.25s forwards ease-out;
+	-webkit-animation:up .25s 5.25s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(16) {
+	background-image:url('home_15.svg');
+	animation:bounce 40s 5.5s forwards ease-out;
+	-o-animation:bounce 40s 5.5s forwards ease-out;
+	-moz-animation:bounce 40s 5.5s forwards ease-out;
+	-webkit-animation:bounce 40s 5.5s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(17) {
+	background-image:url('home_16.svg');
+	animation:bounce 40s 5.75s forwards ease-out;
+	-o-animation:bounce 40s 5.75s forwards ease-out;
+	-moz-animation:bounce 40s 5.75s forwards ease-out;
+	-webkit-animation:bounce 40s 5.75s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(18) {
+	background-image:url('home_18.svg');
+	animation:up .25s 5.375s forwards ease-out;
+	-o-animation:up .25s 5.375s forwards ease-out;
+	-moz-animation:up .25s 5.375s forwards ease-out;
+	-webkit-animation:up .25s 5.375s forwards ease-out;
+	opacity:0;
+}
+
+.home_animation .box:nth-child(19) {
+	background-image:url('home_19.svg');
+	animation:bounce 40s 5.5s forwards ease-out;
+	-o-animation:bounce 40s 5.5s forwards ease-out;
+	-moz-animation:bounce 40s 5.5s forwards ease-out;
+	-webkit-animation:bounce 40s 5.5s forwards ease-out;
+	opacity:0;
+}

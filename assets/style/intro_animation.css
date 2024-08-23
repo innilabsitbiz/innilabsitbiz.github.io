@@ -1,0 +1,274 @@
+/*intro animation*/
+.intro {
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	overflow:hidden;
+	animation:intro 4s 0s forwards ease-out;
+	-o-animation:intro 4s 0s forwards ease-out;
+	-moz-animation:intro 4s 0s forwards ease-out;
+	-webkit-animation:intro 4s 0s forwards ease-out;
+	opacity:0;
+	top:0;
+	left:0;
+	z-index:99;
+}
+
+.i-base {
+	width:100vw;
+	height:100vh;
+	background:rgb(0,10,35);
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.i-shade {
+	width:100vw;
+	height:100vh;
+}
+
+.i-shade .circle {
+	width:200vw;
+	height:200vw;
+	background:radial-gradient(rgba(0,180,255,.5) -10%, rgba(0,10,35,0) 68%);
+	position:fixed;
+	border-radius:100vw;
+}
+
+.i-shade .circle:nth-child(1) {
+	top:55vh;
+	left:-50vw;
+	animation:i-shade-up 2s 0s forwards ease-out;
+	-o-animation:i-shade-up 2s 0s forwards ease-out;
+	-moz-animation:i-shade-up 2s 0s forwards ease-out;
+	-webkit-animation:i-shade-up 2s 0s forwards ease-out;
+	opacity:0;
+}
+
+.i-shade .circle:nth-child(2) {
+	bottom:55vh;
+	left:-50vw;
+	animation:i-shade-down 2s 0s forwards ease-out;
+	-o-animation:i-shade-down 2s 0s forwards ease-out;
+	-moz-animation:i-shade-down 2s 0s forwards ease-out;
+	-webkit-animation:i-shade-down 2s 0s forwards ease-out;
+	opacity:0;
+}
+
+.i-shade .circle:nth-child(3) {
+	top:calc(-100vw + 50vh);
+	left:70vw;
+	animation:i-shade-right 2s 0s forwards ease-out;
+	-o-animation:i-shade-right 2s 0s forwards ease-out;
+	-moz-animation:i-shade-right 2s 0s forwards ease-out;
+	-webkit-animation:i-shade-right 2s 0s forwards ease-out;
+	opacity:0;
+}
+
+.i-shade .circle:nth-child(4) {
+	bottom:calc(-100vw + 50vh);
+	left:-170vw;
+	animation:i-shade-left 2s 0s forwards ease-out;
+	-o-animation:i-shade-left 2s 0s forwards ease-out;
+	-moz-animation:i-shade-left 2s 0s forwards ease-out;
+	-webkit-animation:i-shade-left 2s 0s forwards ease-out;
+	opacity:0;
+}
+
+/*innilabs font*/
+.intro h1 {
+	font-family:'open sans', sans-serif;
+	font-weight:300;
+	color:white;
+	font-size:6vw;
+	line-height:6vw;
+	position:fixed;
+	top:calc(50vh - 3vw);
+	right:35vw;
+	opacity:0;
+	animation:i-title 4s 0s forwards linear;
+	-o-animation:i-title 4s 0s forwards linear;
+	-moz-animation:i-title 4s 0s forwards linear;
+	-webkit-animation:i-title 4s 0s forwards linear;
+}
+
+/*logo*/
+.i-logo {
+	width:12vw;
+	height:12vw;
+	position:fixed;
+	top:calc(50vh - 6vw);
+	left:32vw;
+	animation:i-logo 4s 0s forwards linear;
+	-o-animation:i-logo 4s 0s forwards linear;
+	-moz-animation:i-logo 4s 0s forwards linear;
+	-webkit-animation:i-logo 4s 0s forwards linear;
+	opacity:0;
+}
+
+.i-logo .box {
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	background-position:center center;
+	position:absolute;
+	top:0;
+	left:0;
+	width:12vw;
+	height:12vw;
+	opacity:0;
+}
+
+.i-logo .box:nth-child(1) {
+	background-image:url('outer_ring.svg');
+	animation:i-spin1 4s .5s forwards ease-out;
+	-o-animation:i-spin1 4s .5s forwards ease-out;
+	-moz-animation:i-spin1 4s .5s forwards ease-out;
+	-webkit-animation:i-spin1 4s .5s forwards ease-out;
+}
+
+.i-logo .box:nth-child(2) {
+	background-image:url('outer_ring_glow.svg');
+	animation:i-spin1glow 4s .5s forwards ease-out;
+	-o-animation:i-spin1glow 4s .5s forwards ease-out;
+	-moz-animation:i-spin1glow 4s .5s forwards ease-out;
+	-webkit-animation:i-spin1glow 4s .5s forwards ease-out;
+}
+
+.i-logo .box:nth-child(3) {
+	background-image:url('middle_ring.svg');
+	animation:i-spin2 4s .675s forwards ease-out;
+	-o-animation:i-spin2 4s .675s forwards ease-out;
+	-moz-animation:i-spin2 4s .675s forwards ease-out;
+	-webkit-animation:i-spin2 4s .675s forwards ease-out;
+}
+
+.i-logo .box:nth-child(4) {
+	background-image:url('middle_ring_glow.svg');
+	animation:i-spin2glow 4s .675s forwards ease-out;
+	-o-animation:i-spin2glow 4s .675s forwards ease-out;
+	-moz-animation:i-spin2glow 4s .675s forwards ease-out;
+	-webkit-animation:i-spin2glow 4s .675s forwards ease-out;
+}
+
+.i-logo .box:nth-child(5) {
+	background-image:url('inner_ring.svg');
+	animation:i-spin3 4s .75s forwards ease-out;
+	-o-animation:i-spin3 4s .75s forwards ease-out;
+	-moz-animation:i-spin3 4s .75s forwards ease-out;
+	-webkit-animation:i-spin3 4s .75s forwards ease-out;
+}
+
+.i-logo .box:nth-child(6) {
+	background-image:url('inner_ring_glow.svg');
+	animation:i-spin3glow 4s .75s forwards ease-out;
+	-o-animation:i-spin3glow 4s .75s forwards ease-out;
+	-moz-animation:i-spin3glow 4s .75s forwards ease-out;
+	-webkit-animation:i-spin3glow 4s .75s forwards ease-out;
+}
+
+/*head*/
+.i-head {
+	width:24vw;
+	height:24vw;
+	position:fixed;
+	top:calc(50vh - 9vw);
+	left:27vw;
+	animation:i-head 2s 0s forwards ease-in;
+	-o-animation:i-head 2s 0s forwards ease-in;
+	-moz-animation:i-head 2s 0s forwards ease-in;
+	-webkit-animation:i-head 2s 0s forwards ease-in;
+	opacity:0;
+}
+
+.i-head .box {
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	background-position:center center;
+	position:absolute;
+	top:0;
+	left:0;
+	width:24vw;
+	height:24vw;
+	opacity:0;
+}
+
+.i-head .box:nth-child(1) {
+	background-image:url('head-1.svg');
+	animation:i-blink1 2s 0s forwards ease-in-out;
+	-o-animation:i-blink1 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink1 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink1 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(2) {
+	background-image:url('head-2.svg');
+	animation:i-blink2 2s 0s forwards ease-in-out;
+	-o-animation:i-blink2 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink2 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink2 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(3) {
+	background-image:url('head-3.svg');
+	animation:i-blink3 2s 0s forwards ease-in-out;
+	-o-animation:i-blink3 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink3 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink3 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(4) {
+	background-image:url('head-4.svg');
+	animation:i-blink4 2s 0s forwards ease-in-out;
+	-o-animation:i-blink4 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink4 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink4 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(5) {
+	background-image:url('head-5.svg');
+	animation:i-blink5 2s 0s forwards ease-in-out;
+	-o-animation:i-blink5 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink5 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink5 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(6) {
+	background-image:url('head-6.svg');
+	animation:i-blink6 2s 0s forwards ease-in-out;
+	-o-animation:i-blink6 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink6 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink6 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(7) {
+	background-image:url('head-7.svg');
+	animation:i-blink7 2s 0s forwards ease-in-out;
+	-o-animation:i-blink7 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink7 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink7 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(8) {
+	background-image:url('head-8.svg');
+	animation:i-blink8 2s 0s forwards ease-in-out;
+	-o-animation:i-blink8 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink8 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink8 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(9) {
+	background-image:url('head-9.svg');
+	animation:i-blink9 2s 0s forwards ease-in-out;
+	-o-animation:i-blink9 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink9 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink9 2s 0s forwards ease-in-out;
+}
+
+.i-head .box:nth-child(10) {
+	background-image:url('head-10.svg');
+	animation:i-blink10 2s 0s forwards ease-in-out;
+	-o-animation:i-blink10 2s 0s forwards ease-in-out;
+	-moz-animation:i-blink10 2s 0s forwards ease-in-out;
+	-webkit-animation:i-blink10 2s 0s forwards ease-in-out;
+}

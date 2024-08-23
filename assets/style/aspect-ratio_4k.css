@@ -1,0 +1,30 @@
+@media (min-width:1921px) {
+	/*3840px*/
+	.menu a {
+		margin:1vh 2.5vh;
+		font-size:2.25vh;
+		line-height:2.25vh;
+	}
+
+	.menu::after {
+		width:12vh;
+		height:3.6vh;
+		top:1.75vh;
+		left:10vh;
+	}
+
+	.menu {
+		padding:2.5vh 10vh;
+	}
+
+	.big_logo {
+		top:16vw;
+		left:10vh;
+		width:55vw;
+		height:16.5vw;
+	}
+
+	.one {
+		margin-top:7.25vh;
+	}
+}
