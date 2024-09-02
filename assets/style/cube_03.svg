@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="97.7" y1="150.6" x2="62.3" y2="89.4" gradientTransform="translate(0 162) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5d25a"/>
+      <stop offset=".3" stop-color="#f1cc55"/>
+      <stop offset=".6" stop-color="#e6bd49"/>
+      <stop offset="1" stop-color="#d4a335"/>
+      <stop offset="1" stop-color="#d2a032"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="61.2" y1="90.1" x2="28.2" y2="33.1" gradientTransform="translate(0 162) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#be8626"/>
+      <stop offset="1" stop-color="#965a14"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="162.2" y1="108.5" x2="68.5" y2="14.7" gradientTransform="translate(0 162) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0c846"/>
+      <stop offset=".3" stop-color="#e2b63d"/>
+      <stop offset=".8" stop-color="#bd8725"/>
+      <stop offset="1" stop-color="#aa6e19"/>
+    </linearGradient>
+  </defs>
+  <g id="Axonometric_Cube" data-name="Axonometric Cube">
+    <polygon id="Cube_face_-_top" data-name="Cube face - top" class="cls-1" points="80 82.8 9.4 42 80 1.2 150.6 42 80 82.8"/>
+    <polygon id="Cube_face_-_left" data-name="Cube face - left" class="cls-2" points="80 158.8 9.4 118 9.4 42 80 82.8 80 158.8"/>
+    <polygon id="Cube_face_-_right" data-name="Cube face - right" class="cls-3" points="150.6 118 80 158.8 80 82.8 150.6 42 150.6 118"/>
+  </g>
+</svg>
