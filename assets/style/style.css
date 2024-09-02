@@ -204,10 +204,10 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	position: absolute;
-	animation:menu_down .5s 4s forwards ease-out;
-	-o-animation:menu_down .5s 4s forwards ease-out;
-	-moz-animation:menu_down .5s 4s forwards ease-out;
-	-webkit-animation:menu_down .5s 4s forwards ease-out;
+	animation:menu_down .5s 0s forwards ease-out;
+	-o-animation:menu_down .5s 0s forwards ease-out;
+	-moz-animation:menu_down .5s 0s forwards ease-out;
+	-webkit-animation:menu_down .5s 0s forwards ease-out;
 	opacity:0;
 }
 
@@ -217,10 +217,10 @@ textarea:focus {
 	font-family:'outfit',sans-serif;
 	color:#323232;
 	font-weight:300;
-	animation:menu_down .5s 4s forwards ease-out;
-	-o-animation:menu_down .5s 4s forwards ease-out;
-	-moz-animation:menu_down .5s 4s forwards ease-out;
-	-webkit-animation:menu_down .5s 4s forwards ease-out;
+	animation:menu_down .5s 0s forwards ease-out;
+	-o-animation:menu_down .5s 0s forwards ease-out;
+	-moz-animation:menu_down .5s 0s forwards ease-out;
+	-webkit-animation:menu_down .5s 0s forwards ease-out;
 	opacity:0;
 }
 /*one*/
@@ -241,6 +241,23 @@ textarea:focus {
 	height:56.25vw;
 	position: relative;
 	background:rgb(245,245,245);
+	font-size:0;
+}
+
+.msa .text {
+	display:inline-block;
+	vertical-align:top;
+	width:calc(45vw - 15vh);
+	padding:5vh 5vw 0 15vh;
+
+}
+
+.why_innilabs .text {
+	display:inline-block;
+	vertical-align:top;
+	width:calc(50vw - 15vh);
+	padding:5vh 0 0 15vh;
+
 }
 
 .wide h2 {
@@ -254,7 +271,7 @@ textarea:focus {
 }
 
 .wide .text {
-	padding-top: 20vh;
+	padding-top: 15vh;
 }
 
 
