@@ -1,6 +1,5 @@
-## innilabs it biz
+# innilabs it biz
 
-homepage
-
-https://innilabsitbiz.github.io/
-https://innilabsitbiz.github.io/HOMEPAGE/1/
+### homepage
+<br/>https://innilabsitbiz.github.io/
+<br/>https://innilabsitbiz.github.io/HOMEPAGE/1/
