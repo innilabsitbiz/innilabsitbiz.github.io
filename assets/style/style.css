@@ -2,43 +2,40 @@
 /*body*/
 body {
 	width:var(--w1);
-	height:100vh;
 	margin:0;
 	padding:0;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background:#000;
+	background-image:url('full_bc.jpg');
+	background-size:100% auto;
+	background-repeat:no-repeat;
 }
 
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 .5vh rgba(0, 0, 0, 0);
-    border-radius: .5vh;
+    -webkit-box-shadow: inset 0 0 .5vw rgba(0, 0, 0, 0);
+    border-radius: .5vw;
     background-color: rgba(0, 0, 0, .05)
 }
 
 body::-webkit-scrollbar {
-    width: .5vh;
-    border-radius: .5vh;
+    width: .5vw;
+    border-radius: .5vw;
     background-color: rgba(0, 0, 0, .05)
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: .5vh;
+    border-radius: .5vw;
     background: linear-gradient(135deg, rgba(0, 210, 255, 1), rgba(0, 120, 180, 1))
 }
 
-:root {
-	--w1:calc(100vw - .5vh)
-}
-
 h1 {
-	font-size:10vh;
-	line-height:10vh;
+	font-size:5vw;
+	line-height:5vw;
 }
 
 h2 {
-	font-size:8vh;
-	line-height:8vh;
+	font-size:4vw;
+	line-height:4vw;
 }
 
 h2 strong {
@@ -46,8 +43,8 @@ h2 strong {
 }
 
 h3 {
-	font-size:6.5vh;
-	line-height:6.5vh;
+	font-size:3.25vw;
+	line-height:3.25vw;
 }
 
 h3 strong {
@@ -55,23 +52,23 @@ h3 strong {
 }
 
 h4 {
-	font-size:3.25vh;
-	line-height:3.25vh;
+	font-size:3.25vw;
+	line-height:3.25vw;
 }
 
 h5 {
-	font-size:2.25vh;
-	line-height:2.25vh;
+	font-size:2.25vw;
+	line-height:2.25vw;
 }
 
 h6 {
-	font-size:2.25vh;
-	line-height:2.25vh;
+	font-size:1.25vw;
+	line-height:1.25vw;
 }
 
 p {
-	font-size:1.5vh;
-	line-height:1.5vh;
+	font-size:1.5vw;
+	line-height:1.5vw;
 }
 
 h1,h2,h3,h4,h5,h6,strong,input,p,a,button {
@@ -107,7 +104,7 @@ input {
     border-style: none !important;
     border-color: rgba(0, 0, 0, 0);
     border-image: none;
-    width: calc(100% - 5vh);
+    width: calc(100% - 5vw);
     left: 0;
     position: absolute;
     height: 100%;
@@ -164,7 +161,7 @@ textarea:focus {
 .clear_bc {
     background:linear-gradient(rgba(0,0,0,0) 40%,#fdfeff 80%,#CCD1D6 130%);
     width:100vw;
-    height:100vh;
+    height:100vw;
     position:fixed;
     top:0;
     left:0;
@@ -186,10 +183,11 @@ textarea:focus {
 
 /*Menu*/
 .menu {
-	width:calc(100vw - 20.5vh);
+	width:80vw;
 	background:rgb(240,240,240);
-	box-shadow:0 1.25vh 3.75vh rgba(0,0,0,0.1);
+	box-shadow:0 1.25vw 3.75vw rgba(0,0,0,0.25);
 	position:fixed;
+	padding:1.5vw 10vw;
 	top:0;
 	left:0;
 	z-index:99;
@@ -204,11 +202,10 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	position: absolute;
-	animation:menu_down .5s 0s forwards ease-out;
-	-o-animation:menu_down .5s 0s forwards ease-out;
-	-moz-animation:menu_down .5s 0s forwards ease-out;
-	-webkit-animation:menu_down .5s 0s forwards ease-out;
-	opacity:0;
+	width:8vw;
+	height:2.4vw;
+	top:1vw;
+	left:10vw;
 }
 
 .menu a {
@@ -217,22 +214,37 @@ textarea:focus {
 	font-family:'outfit',sans-serif;
 	color:#323232;
 	font-weight:300;
-	animation:menu_down .5s 0s forwards ease-out;
-	-o-animation:menu_down .5s 0s forwards ease-out;
-	-moz-animation:menu_down .5s 0s forwards ease-out;
-	-webkit-animation:menu_down .5s 0s forwards ease-out;
-	opacity:0;
+}
+
+.menu a {
+	margin:1vw 0 1vw 2.5vw;
+	font-size:1.5vw;
+	line-height:1.5vw;
 }
 /*one*/
 .one {
 	width:var(--w1);
 	height:50vw;
 	position: relative;
-	background:rgb(245,245,245);
 }
 
 .big_logo {
+	top:15vw;
+	left:5vw;
+	width:50vw;
+	height:15vw;
 	position: absolute;
+}
+
+.phone_banner {
+	position:absolute;
+	background-image:url('phone-banner_01.png');
+	background-size:100% auto;
+	background-repeat: no-repeat;
+	width:45vw;
+	height:45vw;
+	top:5vw;
+	right:0;
 }
 
 /*wide*/
@@ -240,23 +252,29 @@ textarea:focus {
 	width:var(--w1);
 	height:56.25vw;
 	position: relative;
-	background:rgb(245,245,245);
 	font-size:0;
 }
 
 .msa .text {
 	display:inline-block;
 	vertical-align:top;
-	width:calc(45vw - 15vh);
-	padding:5vh 5vw 0 15vh;
+	width:40vw;
+	padding:10vw 0 0 10vw !important;
 
+}
+
+.msa .phone_banner {
+	background-image:url('phone-banner_02.png');
+	width:50vw;
+	height:50vw;
+	top:0;
 }
 
 .why_innilabs .text {
 	display:inline-block;
 	vertical-align:top;
-	width:calc(50vw - 15vh);
-	padding:5vh 0 0 15vh;
+	width:37.5vw;
+	padding:7.5vw 0 0 10vw !important;
 
 }
 
@@ -266,12 +284,12 @@ textarea:focus {
 }
 
 .wide h4 {
-	font-size:2.75vh;
-	line-height:3.5vh !important;
+	font-size:1.5vw;
+	line-height:2vw !important;
 }
 
 .wide .text {
-	padding-top: 15vh;
+	padding-top: 5vw;
 }
 
 
@@ -279,7 +297,7 @@ textarea:focus {
 .three {
 	width:var(--w1);
 	position:relative;
-	padding:5vh 0;
+	padding:5vw 0;
 	font-size:0;
 	z-index:97;
 }
@@ -288,29 +306,24 @@ textarea:focus {
 	content:' ';
 	width:100vw;
 	height:200vw;
-	background-image: url('bc_door.png');
-	background-size:150% auto;
-	background-repeat:no-repeat;
-	background-position: -30vw 10vw;
-	position: absolute;
 }
 
 .three h2 {
-	padding:8vh 10vh 8vh 15vh;
+	padding:3vw 4vw 3vw 10vw;
 	background:linear-gradient(135deg,rgb(60,60,60), rgb(10,10,10));
 	color:white;
 	font-family:'outfit',sans-serif;
 	font-weight:400;
 	width:fit-content;
-	border-radius:0 2.5vh 2.5vh 0;
-	box-shadow:0 2.5vh 3.75vh rgba(0, 0, 0,.2);
+	border-radius:0 1.5vw 1.5vw 0;
+	box-shadow:0 2.5vw 3.75vw rgba(0, 0, 0,.2);
 }
 
 /*four*/
 .four {
 	width:var(--w1);
 	position:relative;
-	padding:5vh 0;
+	padding:5vw 0;
 	font-size:0;
 	z-index:98;
 	margin-top: -25vw;
@@ -320,17 +333,13 @@ textarea:focus {
 	content:' ';
 	width:100vw;
 	height:200vw;
-	background-image: url('bc_cloud.png');
-	background-size:150% auto;
-	background-repeat:no-repeat;
-	position: absolute;
 }
 
 /*five*/
 .five {
 	width:var(--w1);
 	position:relative;
-	padding:5vh 0;
+	padding:5vw 0;
 	font-size:0;
 	z-index:97;
 	margin-top: -25vw;
@@ -341,35 +350,30 @@ textarea:focus {
 	content:' ';
 	width:100vw;
 	height:200vw;
-	background-image: url('bc_patch.png');
-	background-size:140% auto;
-	background-repeat:no-repeat;
-	background-position: 0 -15vw;
-	position: absolute;
 }
 
 /*footer*/
 .footer {
-	width:calc(100vw - 20.5vh);
-	padding:10vh 10vh 5vh 10vh;
+	width:80vw;
+	padding:5vw 10vw 2.5vw 10vw;
 	background:rgb(240,240,240);
-	box-shadow:0 -1.25vh 3.75vh rgba(0,0,0,0.1);
+	box-shadow:0 -1.25vw 3.75vw rgba(0,0,0,0.25);
 	position:relative;
 }
 
 .footer h4 {
 	font-family:'open sans', sans-serif;
 	font-weight:300;
-	font-size:4.5vh;
-	line-height:4.5vh;
+	font-size:2.5vw;
+	line-height:2.5vw;
 	position: relative;
 }
 
 .footer h4::after {
-	width:12vh;
-	height:3.6vh;
-	top:-3vh;
-	left:-3.6vh;
+	width:6vw;
+	height:1.8vw;
+	top:-1.6vw;
+	left:-1.8vw;
 	content:' ';
 	background-image:url('logo_black.svg');
 	background-position: center center;
@@ -381,21 +385,22 @@ textarea:focus {
 .footer h5 {
 	font-family:'outfit', sans-serif;
 	font-weight:300;
-	margin-top:3.75vh !important;
-	line-height:2.75vh;
+	margin-top:1.75vw !important;
+	line-height:1.5vw;
+	font-size:1.25vw;
 }
 
 /*label*/
 
 .label {
-	padding:8vh 7.5vh 8vh 15vh;
+	padding:3vw 4vw 3vw 10vw;
 	background:linear-gradient(135deg,rgb(51,225,105), rgb(0,40,100) 15%, rgb(2,10,20) 100%);
 	color:white;
 	font-family:'outfit',sans-serif;
 	font-weight:400;
 	width:fit-content;
-	border-radius:0 2.5vh 2.5vh 0;
-	box-shadow:0 5vh 7.5vh rgba(0, 0, 0,.66);
+	border-radius:0 1.5vw 1.5vw 0;
+	box-shadow:0 5vw 7.5vw rgba(0, 0, 0,.66);
 	z-index:98;
 	position:relative;
 	margin-top: 25vw;
@@ -407,10 +412,11 @@ textarea:focus {
 }
 
 .label h4 {
-	margin-top:5vh !important;
+	margin-top:1vw !important;
 	color:white;
 	font-weight: 300;
-	line-height:4vh;
+	font-size:1.5vw;
+	line-height:2vw;
 	font-family:'open sans', sans-serif;
 }
 
@@ -418,7 +424,7 @@ textarea:focus {
 .text {
 	position: relative;
 	font-size:0;
-	padding:15vh 15vh 0 15vh;
+	padding:5vw 10vw 0 10vw;
 }
 
 .text h3 {
@@ -427,17 +433,17 @@ textarea:focus {
 }
 
 .text h4 {
-	margin-top:2.5vh !important;
+	margin-top:2.5vw !important;
 	font-family:'open sans', sans-serif;
 	font-weight:300;
-	line-height:4vh;
+	line-height:4vw;
 }
 
 .text .box {
 	display:inline-block;
 	vertical-align:top;
 	width:30%;
-	margin-bottom:10vh;
+	margin-bottom:5vw;
 }
 
 .text .box:nth-child(2) {
@@ -453,24 +459,24 @@ textarea:focus {
 .text .box h4 {
 	font-family: 'outfit', sans-serif;
 	color:white;
-	font-size:4vh;
-	line-height:4.75vh !important;
+	font-size:2vw;
+	line-height:2.5vw !important;
 	font-weight:300;
-	margin-top:3.75vh !important;
-	height:10vh;
+	margin-top:2.25vw !important;
+	height:5vw;
 }
 
 .text .box h6 {
 	font-family: 'open sans', sans-serif;
 	color:white;
 	font-weight:300;
-	margin-top:3.75vh !important;
-	line-height:3vh;
+	margin-top:2.5vw !important;
+	line-height:1.75vw;
 }
 
 .text .box .icon {
-	width:12.5vh;
-	height:12.5vh;
+	width:5vw;
+	height:5vw;
 }
 
 
