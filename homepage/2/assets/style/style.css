@@ -229,7 +229,7 @@ textarea:focus {
 }
 
 .big_logo {
-	top:15vw;
+	top:25vw;
 	left:5vw;
 	width:50vw;
 	height:15vw;
@@ -243,7 +243,7 @@ textarea:focus {
 	background-repeat: no-repeat;
 	width:45vw;
 	height:45vw;
-	top:5vw;
+	top:15vw;
 	right:0;
 }
 
