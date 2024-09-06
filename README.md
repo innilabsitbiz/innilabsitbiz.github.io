@@ -22,3 +22,6 @@ Source Design(image) https://drive.google.com/drive/folders/1E18L4qlUif9v-WBcxp6
 remote.origin.url=https://github.com/innilabsitbiz/innilabsitbiz.github.io.git
 
 git remote set-url origin https://innilabsitbiz@github.com/innilabsitbiz/innilabsitbiz.github.io.git
+
+git config user.name "innilabsitbiz"
+git config user.email ""
