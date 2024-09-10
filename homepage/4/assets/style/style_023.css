@@ -1,0 +1,85 @@
+@media only screen and (max-width: 480px) {
+h6 {
+	font-size:14px;
+	line-height:17px;
+}
+
+	.menu {
+	width: calc(100% - 48px);
+    position: fixed;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    top: 0;
+    left: 24px;
+    z-index: 99;
+    font-size: 0;
+    text-align: right;
+}
+
+.menu::after {
+	content:' ';
+	background-image:url('logo_black.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width:90px;
+	height:27px;
+	top:16px;
+	left:0;
+}
+
+.menu a {
+	display: inline-block;
+	vertical-align: middle;
+	font-family:'outfit',sans-serif;
+	color:#323232;
+	font-weight:300;
+}
+
+.menu a {
+	margin-left: 16px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.bc_menu {
+	position:fixed;
+	width: 100vw;
+    height: 58px;
+	background:rgba(240,240,240,1);
+	box-shadow:0 1.25vw 3.75vw rgba(0,0,0,0.25);
+	top:0;
+	left:0;
+	z-index: 98;
+}
+
+.wide h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.text .box {
+    width: 100%;
+}
+
+.text .box h4 {
+    font-size: 21px;
+    line-height: 24px !important;
+}
+
+.why_innilabs .text h2 {
+	font-size:36px;
+	line-height:36px;
+}
+
+.why_innilabs .text h4:nth-child(3) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.label h2 {
+	width:60vw;
+}
+}
