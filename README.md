@@ -32,6 +32,8 @@ https://innilabsitbiz.github.io/homepage/5/
 
 https://innilabsitbiz.github.io/homepage/6/
 
+https://innilabsitbiz.github.io/homepage/6fix/
+
 ---
 
 # History
