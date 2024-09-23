@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        opacity: .3;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="40.8" y1="51.2" x2="86.7" y2="97.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78ffff"/>
+      <stop offset="1" stop-color="#0000a7"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-3">
+    <path class="cls-2" d="M113.5,43.8l-8.5-9c-.6-.7-1.7-.7-2.4,0l-7.4,7c-.7.6-1.5,1-2.4.9h-2.8c-.9,0-1.8-.5-2.5-1.2l-9.6-10c-.8-.8-2.1-.9-2.9,0l-11.1,10.6c-.8.8-.9,2.1,0,3l10.6,11.1c.8.8,2.1.9,2.9,0l10-9.5c.6-.6,1.5-.9,2.3-.9h2.8c.9,0,1.7.5,2.3,1.1l7.4,7.8c.6.7,1.7.7,2.4,0l9-8.5c.7-.6.7-1.7,0-2.4h-.1Z"/>
+    <path class="cls-2" d="M112,104.9l-8.5-9c-.6-.7-1.7-.7-2.4,0l-7.4,7c-.7.6-1.5,1-2.4.9h-2.8c-.9,0-1.8-.5-2.5-1.2l-9.6-10c-.8-.8-2.1-.9-2.9,0l-11.1,10.6c-.8.8-.9,2.1,0,2.9l10.6,11.1c.8.8,2.1.9,2.9,0l10-9.5c.6-.6,1.5-.9,2.3-.9h2.8c.9,0,1.7.5,2.3,1.1l7.4,7.8c.6.7,1.7.7,2.4,0l9-8.5c.7-.6.7-1.7,0-2.4h-.1Z"/>
+    <rect class="cls-2" x="37.2" y="13.7" width="21.5" height="21.5" rx="2.2" ry="2.2" transform="translate(-3.6 39.8) rotate(-43.6)"/>
+    <rect class="cls-2" x="22.4" y="33.1" width="9.5" height="9.5" rx="1" ry="1" transform="translate(-18.6 29.2) rotate(-43.6)"/>
+    <rect class="cls-2" x="5" y="93.9" width="5.8" height="5.8" rx=".6" ry=".6" transform="translate(-64.5 32.1) rotate(-43.6)"/>
+    <path class="cls-2" d="M120.6,58.5l3.2,3.3c.2.2.2.6,0,.8l-3.3,3.2c-.2.2-.6.2-.8,0l-3.2-3.3c-.2-.2-.2-.6,0-.8l3.3-3.2c.2-.2.6-.2.8,0Z"/>
+    <rect class="cls-2" x="20.4" y="95.7" width="13.1" height="13.1" rx="1.4" ry="1.4" transform="translate(-63.1 46.8) rotate(-43.6)"/>
+  </g>
+  <path class="cls-1" d="M106.7,73.3l-14.6-15.3c-1.1-1.2-2.9-1.2-4.1,0l-12.6,12c-1.1,1.1-2.6,1.6-4.2,1.6h-4.9c-1.6-.2-3.2-.8-4.3-2l-16.4-17.2c-1.4-1.4-3.6-1.5-5,0l-19,18.1c-1.4,1.4-1.5,3.6-.1,5.1l18.1,19c1.4,1.4,3.6,1.5,5,0l17.1-16.3c1.1-1,2.5-1.6,4-1.6h4.7c1.5.2,2.9.8,3.9,1.9l12.7,13.3c1.1,1.2,2.9,1.2,4.1,0l15.3-14.6c1.2-1.1,1.2-2.9,0-4.1h.3Z"/>
+</svg>
