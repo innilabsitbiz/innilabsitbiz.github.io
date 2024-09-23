@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap");
+:root {
+  scroll-behavior: smooth;
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.absolute-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+}
+
+.m-zero {
+  margin: 0;
+}
+
+.f-row {
+  display: flex;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pad-limit-content {
+  padding: 0 4% 0 4%;
+}
+
+.icon-size {
+  height: 74px;
+  width: 74px;
+}
+
+.h-content-size {
+  font-size: 24px;
+}
+
+.p-content-size {
+  font-size: 14px;
+}
+
+.normal-weight {
+  font-weight: 400;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 1em 20% 1em 20%;
+  background: rgb(230, 230, 230);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  top: 0;
+  position: sticky;
+  min-height: 3em;
+}
+
+nav > img {
+  width: 120px;
+}
+
+#navlink a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1280px;
+}
+
+#navlink {
+  gap: 2em;
+  justify-content: space-between;
+}
+
+#intro {
+  background-image: url("./assets/banner_a1.png");
+  min-height: 30em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#intro-banner {
+  width: 50%;
+}
+
+#intro-wording {
+  width: 50%;
+  gap: 2em;
+}
+
+#intro-wording > h3 {
+  font-size: 42px;
+  text-align: left;
+  font-weight: 400;
+}
+
+#intro-wording > p {
+  font-size: 21px;
+}
+
+#definition {
+  background-image: url("./assets/banner_a2.png");
+  min-height: 1280px;
+  background-position-x: -400px;
+}
+
+#definition-header {
+  padding: 1em 1em 1em 3em;
+  width: 35%;
+  border-radius: 0 1em 1em 0;
+  background-color: black;
+  color: white;
+}
+
+#definition-header h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+#def-wrapper {
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.def-content {
+  width: 30%;
+  gap: 1em;
+  color: white;
+  margin-top: 5em;
+}
+
+.def-content > h5 {
+  min-height: 2em;
+  font-weight: 400;
+}
+
+#innovative {
+  background-image: url("./assets/banner_a3.png");
+  min-height: 900px;
+  background-position-y: -190px;
+  background-position-x: -400px;
+  margin-top: -24em;
+  background-size: 150%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#innovative-header {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgb(51, 225, 105),
+    rgb(0, 40, 100) 15%,
+    rgb(2, 10, 20) 100%
+  );
+  border-radius: 0 16px 16px 0;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 42px 38px 42px 60px;
+  max-width: 42%;
+  gap: 2em;
+}
+
+#innovative-header > h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+#innovative-header > h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#innovative-content-wrapper {
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 4em;
+}
+
+#solutions {
+  color: white;
+  padding-top: 25em;
+  margin-top: -15em;
+  background-image: url("./assets/banner_a4.png"),
+    linear-gradient(rgb(0, 0, 0), rgb(3, 15, 45) 97%, rgba(5, 20, 50, 0));
+  background-size: 130%;
+  background-repeat: no-repeat;
+  padding-bottom: 5em;
+}
+
+#solutions-header {
+  width: 45%;
+  gap: 5em;
+}
+
+#solutions-header > h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+#solutions-header > h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#solution-list {
+  margin-top: 10em;
+  gap: 5em;
+}
+
+.solution-item {
+  gap: 2em;
+}
+
+.solution-item-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.solution-item-name > h2 {
+  font-size: 54px;
+}
+
+.solution-item-desc {
+  gap: 1em;
+  justify-content: center;
+  width: 70%;
+}
+
+.solution-item-desc > h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.solution-item-desc > h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#why-innilabs {
+  /* background-image: url("./assets/banner_five.png"); */
+  padding-top: 5em;
+  min-height: 20em;
+  padding-bottom: 9em;
+  background-size: 80%;
+  background-position-y: -15em;
+  background-position-x: 25em;
+  margin-bottom: 3em;
+}
+
+#why-innilabs img {
+  max-width: 50%;
+}
+
+#reason > h2 {
+  font-size: 48px;
+}
+
+#reason > p {
+  font-size: 18px;
+}
+
+#reason {
+  width: 50%;
+}
+
+footer {
+  justify-content: center;
+  align-items: left;
+  width: 92%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background: rgb(230, 230, 230);
+  padding: 2em 0 2em 8%;
+  gap: 0.5em;
+}
+
+footer h4 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+footer h6 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  footer {
+    width: 98%;
+    padding: 2em 1% 2em 1%;
+  }
+  main {
+    width: 100%;
+  }
+  #intro {
+    flex-direction: column-reverse;
+  }
+
+  #intro-wording {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  #definition {
+    background-position-y: -5em;
+    background-position-x: -1100px;
+    padding-bottom: 10em;
+    background-size: 300%;
+  }
+
+  #innovative {
+    margin-top: -10em;
+    background-position-x: -30em;
+    background-position-y: -5em;
+    background-size: 190%;
+  }
+
+  #definition-header {
+    width: 40%;
+  }
+
+  #innovative-header {
+    max-width: 60%;
+  }
+
+  #solutions {
+    padding-top: 15em;
+    background-size: 130%;
+  }
+
+  .def-content {
+    max-width: 40%;
+  }
+  .empty-content {
+    display: none;
+  }
+
+  #solution-list {
+    margin-top: 2em;
+  }
+
+  .solution-item-name {
+    min-width: 45%;
+  }
+
+  .solution-item-name > h2 {
+    font-size: 42px;
+  }
+
+  .solution-item-desc > h3 {
+    font-size: 30px;
+  }
+
+  .solution-item-desc > h5 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    padding: 1% 4% 1% 4%;
+    width: 92%;
+  }
+
+  #navlink {
+    gap: 1em;
+  }
+
+  #navlink a {
+    font-size: 16px;
+  }
+
+  #intro-wording h3 {
+    font-size: 32px;
+  }
+
+  #intro-wording p {
+    font-size: 18px;
+  }
+
+  #definition {
+    background-position-y: -2em;
+    background-position-x: 0;
+    background-size: 100%;
+    background-image: url("assets/banner_a2.png");
+    background-color: black;
+  }
+
+  #definition-header {
+    width: 80%;
+  }
+
+  #definition-header h2 {
+    font-size: 36px;
+  }
+
+  #def-wrapper {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+  }
+
+  .def-content {
+    max-width: 90%;
+    width: 90%;
+    gap: 0.5em;
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #innovative {
+    margin-top: -3em;
+    background-position-x: -15em;
+    background-color: black;
+  }
+
+  #innovative-header {
+    max-width: 70%;
+  }
+
+  #innovative-header h2 {
+    font-size: 32px;
+  }
+
+  #innovative-header h5 {
+    font-size: 18px;
+  }
+
+  #innovative-content-wrapper {
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #solutions {
+    margin-top: -10em;
+  }
+
+  #solutions-header h1 {
+    font-size: 48px;
+  }
+
+  #solutions-header {
+    width: 100%;
+    gap: 2em;
+    margin-bottom: 4em;
+  }
+
+  .solution-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .solution-item-name > h2 {
+    font-size: 36px;
+  }
+
+  #why-innilabs {
+    flex-direction: column-reverse;
+    padding-top: 1em;
+  }
+
+  #why-innilabs > img {
+    max-width: 80%;
+  }
+
+  #reason {
+    width: 100%;
+  }
+}
