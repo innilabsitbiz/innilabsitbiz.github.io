@@ -1,0 +1,344 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: white;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+header nav ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #3c5ca9;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #3c5ca9;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #3c5ca9;
+  color: white;
+}
+
+/* END HEADER */
+
+/* MAIN */
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+/* END MAIN */
+
+/* SOLUTIONS */
+#solutions .title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
+.tabset > input[type="radio"] {
+  /* position: absolute;
+  left: -200vw; */
+  display: none;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3) {
+  display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  color: #8d8d8d;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid #3c5ca9;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+  color: #3c5ca9;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #3c5ca9;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Change cursor on hover */
+  position: relative; /* Ensure positioning context for img */
+}
+
+.grid-item img {
+  transition: transform 0.3s ease; /* Animate image scaling */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Lift the item slightly */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.grid-item:hover .icon-one {
+  animation: rotate 2000ms linear infinite; /* Apply infinite rotation */
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+.grid-item:hover .icon-two {
+  animation: grow-and-sink 2000ms infinite ease-in-out; /* Apply infinite rotation */
+}
+
+.grid-item:hover .icon-three {
+  animation: bounce 500ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1); /* Apply infinite rotation */
+}
+/* END SOLUTIONS */
+
+/* ABOUT */
+#about {
+  width: 100%;
+  padding-top: 20px;
+}
+/* END ABOUT */
+
+/* FOOTER */
+footer {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-right {
+  width: 100%;
+}
+
+footer .footer-right .socials {
+  display: grid;
+}
+
+footer .socials i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  display: flex; /* Ensures text and icon align properly */
+  align-items: center; /* Center aligns the items vertically */
+}
+
+footer .socials i::before {
+  margin-right: 10px;
+}
+
+/* footer .socials i a {
+  text-decoration: none;
+  color: #474e68;
+} */
+
+footer .copyright {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1rem;
+  background-color: #3c5ca9;
+  padding: 0.5rem;
+}
+
+footer .copyright p {
+  color: #fff;
+}
+/* END FOOTER */
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 1.2rem;
+  }
+}
+/* END RESPONSIVE */
+
+/* GLOBAL */
+p {
+  color: #8d8d8d;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #0faaa8 0%, #5fbe80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.container {
+  max-width: 65em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container .wrapper-left {
+  flex: 1;
+  font-size: 20px;
+}
+
+.container .wrapper-left .title {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.container .wrapper-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* width: 50%; */
+}
+
+.container .wrapper-right img {
+  width: 100%;
+  height: 100%; /* auto */
+  object-fit: contain;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow-and-sink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+/* END GLOBAL */
