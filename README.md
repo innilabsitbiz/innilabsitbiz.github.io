@@ -45,7 +45,7 @@ https://innilabsitbiz.github.io/homepage/e/
 
 https://innilabsitbiz.github.io/homepage/7/
 
-https://innilabsitbiz.github.io/homepage/7efix/
+https://innilabsitbiz.github.io/homepage/7e-fix/
 
 
 ---
