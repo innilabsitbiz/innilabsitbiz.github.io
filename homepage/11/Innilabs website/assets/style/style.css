@@ -1,0 +1,397 @@
+/*style*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+body {
+	padding:0;
+	overflow-y: scroll;
+	overflow-x: hidden !important;
+    background: rgb(0,6,14);
+    width:100vw;
+    margin:0 auto !important;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 .5vw rgba(0, 0, 0, 0);
+    border-radius: .5vh;
+    background-color: rgba(0, 0, 0, .05)
+}
+
+body::-webkit-scrollbar {
+    width: .5vh;
+    border-radius: .5vh;
+    background-color: rgba(0, 0, 0, .05)
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: .5vh;
+    background: linear-gradient(135deg, rgba(0, 210, 255, 1), rgba(0, 120, 180, 1))
+}
+
+h2 {
+    font-family:"Outfit", sans-serif;
+    font-weight:400;
+}
+
+h2 strong {
+    font-weight:900;
+}
+
+strong {
+    font-weight:600;
+}
+
+h3 {
+    font-family:"Outfit", sans-serif;
+    font-weight:400;
+}
+
+h4 {
+    font-family:"Titillium Web", sans-serif;
+    font-weight:300;
+}
+
+h5 {
+    font-family:"Outfit", sans-serif;
+    font-weight:400;
+}
+
+h6 {
+    font-family:"Titillium Web", sans-serif;
+    font-weight:300;
+}
+
+p {
+    font-family:"Titillium Web", sans-serif;
+    font-weight:300;
+}
+
+h1,h2,h3,h4,h5,h6,strong,input,p,a,button {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    color:white;
+}
+
+a,p {
+    text-decoration:none !important;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.cool {
+    background: linear-gradient(30deg,rgb(0,150,255) 20%, rgb(0,255,255) 45%, rgb(0,150,255) 75%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.warm {
+    background: linear-gradient(30deg,rgb(255,150,0) 20%, rgb(255,220,0) 45%, rgb(255,150,0) 75%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*menu*/
+.menu {
+    background:linear-gradient(rgb(255,255,255), rgb(230,230,230));
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+}
+
+.menu::after {
+    content:' ';
+    position: absolute;
+    background-image:url('logo.png');
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:center center;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+/*one*/
+.one {
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+.one::after {
+    content:' ';
+    position: absolute;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    z-index:97;
+    background-image: url('float.svg');
+    opacity:.33;
+}
+
+.one .logo {
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    z-index:98;
+}
+
+.one .logo::before {
+    content:' ';
+    position: absolute;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    z-index:97;
+    display:none;
+}
+
+.one h5 {
+    text-align: right;
+    position:relative;
+    z-index:98;
+    color:#323232;
+}
+
+.one h3 {
+    font-family:"Outfit", sans-serif;
+    position:relative;
+    z-index:98;
+    color:#323232;
+}
+
+.one .box {
+    position:relative;
+    background:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0) 50%);
+}
+
+.one .box::before {
+    content:' ';
+    position: absolute;
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    z-index:97;
+    display:none;
+}
+
+.one .box h4 {
+    text-align:center;
+    font-family:"Outfit", sans-serif;
+    color:#323232;
+}
+
+.one .box h5 {
+    text-align:center;
+    font-family:"Titillium Web", sans-serif;
+}
+
+/*two*/
+.two {
+    background-repeat:no-repeat;
+}
+
+.two h2 {
+    text-align:center;
+    color:#323232;
+}
+
+.two h2 strong {
+    font-weight:600;
+    color:#323232;
+}
+
+.two h4 {
+    text-align:center;
+    color:#323232;
+}
+
+.two h4 strong {
+    font-weight:600;
+}
+
+.two .box {
+    font-size:0;
+}
+
+.two .box .list .icon {
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.two .box .list:nth-child(1) .icon {
+    background-image: url('one.svg');
+}
+
+.two .box .list:nth-child(2) .icon {
+    background-image: url('two.svg');
+}
+
+.two .box .list:nth-child(3) .icon {
+    background-image: url('three.svg');
+}
+
+.two .box .list:nth-child(4) .icon {
+    background-image: url('four.svg');
+}
+
+.two .box .list:nth-child(5) .icon {
+    background-image: url('five.svg');
+}
+
+/*three*/
+.three {
+    background-repeat:no-repeat;
+    background-position:center top;
+    position:relative;
+}
+
+.three h2 {
+    font-weight:600;
+    text-align: center;
+}
+
+.three h5 {
+    text-align: center;
+    font-family:"Titillium Web", sans-serif;
+}
+
+.three h4 {
+    text-align: center;
+}
+
+.three .box {
+    font-size:0;
+}
+
+.three .box .list h5 {
+    position:relative;
+    font-family:"Outfit", sans-serif;
+}
+
+.three .box .list h5::before {
+    content:' ';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+.three .box .list:nth-child(1) h5::before {
+    background-image: url('six.svg');
+}
+
+.three .box .list:nth-child(2) h5::before {
+    background-image: url('seven.svg');
+}
+
+.three .box .list:nth-child(3) h5::before {
+    background-image: url('eight.svg');
+}
+
+.three .box .list:nth-child(4) h5::before {
+    background-image: url('nine.svg');
+}
+
+.three .box .list:nth-child(5) h5::before {
+    background-image: url('ten.svg');
+}
+
+/*four*/
+.four {
+    background-repeat:no-repeat;
+}
+
+.four h2 {
+    font-weight:600;
+}
+
+.four .box {
+    background-repeat:no-repeat;
+}
+
+.four .box .list {
+    font-size:0;
+}
+
+.four .box .list .logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:100% auto;
+}
+
+/*five*/
+.five {
+    background-repeat: no-repeat;
+}
+
+.five h3{
+    font-family:"Titillium Web", sans-serif;
+    position: relative; 
+}
+
+.five h3::before {
+    content:' ';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    z-index:98;
+}
+
+.five h5 {
+    font-weight:300;
+    position:relative;
+}
+
+.five h5::before {
+    content:' ';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+/*six*/
+.six {
+    position: relative;
+    text-align: center;    
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.six .logo {
+    background-size:100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/*footer*/
+.footer h6 {
+    color:#323232;
+    font-weight:400;
+}
+
+.footer p {
+    color:#323232;
+}
