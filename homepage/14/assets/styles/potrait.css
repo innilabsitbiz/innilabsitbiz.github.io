@@ -1,0 +1,1672 @@
+@media (max-aspect-ratio: 1 / 1) {
+	body {
+		width:820px;
+	}
+	h2 {
+		font-size:62px;
+	}
+
+	h3 {
+		font-size:38px;
+	}
+
+	h4 {
+		font-size:24px;
+	}
+
+	h5 {
+		font-size:13px;
+	}
+
+	p {
+		font-size:13px;
+	}
+
+	h6 {
+		font-size:6px;
+	}
+
+	/*menu*/
+	.menu {
+		width:calc(100vw - 50px);
+		padding:25px 25px 50px;
+		left:0;
+	}
+
+	.menu a:nth-child(1) {
+		width:165px;
+		height:75px;
+	}
+
+	.menu a:nth-child(6) {
+		width:21px;
+		height:21px;
+	    margin-top:-24px !important;
+	}
+
+	.menu a {
+		font-size:21px;
+		line-height:21px;
+		margin-right:28px;
+	}
+
+	/*one*/
+	.one::after {
+		width: 1440px;
+        height: 975px;
+        top: -260px;
+        left: -320px;
+	}
+
+	.one h3 {
+		line-height: 42px;
+        width: 720px;
+        margin: 280px auto 0 auto !important;
+	}
+
+	.rocketjump {
+		width: 750px;
+        height: 225px;
+        margin-top: 20px;
+	}
+
+	/*two*/
+	.two {
+		width: 770px;
+        margin: 240px auto 0 auto;
+        height: 230px;
+        padding: 32px 0;
+	}
+
+	.two::after {
+		width: 1152px;
+        height: 600px;
+        top: -182px;
+        left: -182px;
+	}
+
+	.two .box {
+		width:350px;
+	}
+
+	.two .box h4 {
+		line-height: 28px;
+        min-height: 72px;
+	}
+
+	.two .box h5 {
+		line-height: 16px;
+        margin-bottom: 6px !important;
+	}
+
+	.two .box:nth-child(1) {
+		margin-right:70px;
+	}
+
+	/*three*/
+	.three {
+		width:820px;
+		margin-top:80px;
+	}
+
+	.three .box:nth-child(1) {
+		width:280px;
+		height:240px;
+	}
+
+	.three .box:nth-child(2) {
+		width:540px;
+	}
+
+	.three .box h2 {
+		line-height:62px;
+		margin-bottom:12px !important;
+	}
+
+	.three .box h3 {
+		line-height:38px;
+	}
+
+	/*four*/
+	.four {
+		width: 820px;
+        margin: 160px auto 0 auto !important;
+	}
+
+	.four::after {
+		width: 1440px;
+        height: 975px;
+        top: 80px;
+        left: -480px;
+	}
+
+	.four h2 {
+		margin-bottom: 16px !important;
+        font-size: 82px;
+        line-height: 82px;
+	}
+
+	.four h3 {
+		line-height:38px;
+		margin-bottom:50px !important;
+	}
+
+	.four .box .list {
+		width: 240px;
+        margin-bottom: 48px;
+	}
+
+	.four .box .list h5 {
+		font-size: 18px;
+        line-height: 21px;
+        height: 39px;
+        margin-bottom: 12px !important;
+	}
+
+	.four .box .list p {
+		line-height:16px;
+	}
+
+	.four .box .list:nth-child(2) {
+		margin:0 50px;
+	}
+
+	.four .box .list:nth-child(5) {
+		margin:0 50px;
+	}
+
+	.four .box .list .icon {
+		width: 62px;
+        height: 62px;
+        margin-bottom: 12px;
+	}
+
+	/*five*/
+	.five {
+	    width: 820px;
+        margin: 620px auto 0 auto !important;
+	}
+
+	.five::after {
+		width: 1440px;
+        height: 960px;
+        top: -720px;
+        left: -320px;
+	}
+
+	.animation_five {
+		top: -400px;
+        left: 210px;
+        width: 320px;
+        height: 214px;
+	}
+
+	.five h2 {
+		margin-bottom:24px !important;
+		font-size:82px;
+		line-height:82px;
+	}
+
+	.five h5 {
+	    font-size:21px;
+	    line-height:21px;
+	    margin-bottom:12px !important;
+	}
+
+	.five h4 {
+	    font-size:32px;
+	    line-height:32px;
+	    margin-bottom:12px !important;
+	}
+
+	.five .box .list {
+	    width:280px;
+	    margin:64px 0 0 0;
+	}
+
+	.five .box .list:nth-child(odd) {
+	    margin:64px 180px 0 80px;
+	}
+
+	.five .box .list h5 {
+	    font-size: 18px;
+        line-height: 21px;
+        height: 18px;
+        margin-bottom: 12px !important;
+	}
+
+	.five .box .list h5::before {
+	    width: 62px;
+        height: 62px;
+        top: -18px;
+        left: -72px;
+	}
+
+	.five .box .list p {
+		line-height:16px;
+	}
+
+	/*six*/
+	.six {
+		width: 820px;
+        margin: 160px auto 0 auto !important;
+	}
+
+	.six::after {
+		width:1054px;
+		height:646px;
+		top: -300px;
+        left: 0px;
+	}
+
+	.six h2 {
+		margin-bottom: 24px !important;
+        font-size: 72px;
+        line-height: 72px;
+	}
+
+	.six h4 {
+	    line-height: 24px;
+        margin-bottom: 12px !important;
+	}
+
+	.six .box {
+		width: 820px;
+        margin-top: 42px;
+        z-index: 98;
+        position: relative;
+	}
+
+	.six .box .list {
+	    width: 820px;
+        margin-bottom: 32px;
+	}
+
+	.six .box .list .text {
+		width: 402px;
+        margin-left: 40px;
+	}
+
+	.six .box .list .text h5 {
+		font-size: 21px;
+        line-height: 24px;
+        margin-top: 8px !important;
+        margin-bottom: 6px !important;
+	}
+
+	.six .box .list p {
+		line-height:16px;
+	}
+
+	.six .box .list .logo {
+		width: 378px;
+        height: 117px;
+	}
+
+	/*seven*/
+	.seven {
+		width: 820px;
+        margin: 160px auto 0 auto !important;
+	}
+
+	.seven::after {
+		width: 840px;
+        height: 560px;
+        top: -160px;
+	}
+
+	.seven h3 {
+		margin-bottom: 24px !important;
+        font-size: 82px;
+        line-height: 82px;
+	}
+
+	.seven h5 {
+	    font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 64px !important;
+        width: 756px;
+        padding: 24px 32px;
+        border-radius: 12px;
+        box-shadow: 0 25px 30px rgba(0, 0, 0, .33);
+	}
+
+	/*eight*/
+	.eight {
+		width: 820px;
+        margin: 160px auto 0 auto !important;
+	}
+
+	.eight::after {
+		width: 800px;
+        height: 475px;
+        top: -60px;
+        left: 60px;
+	}
+
+	.eight h3 {
+		line-height: 38px;
+        margin-bottom: 24px !important;
+	}
+
+	.eight h4 {
+		font-size: 28px;
+        line-height: 42px;
+	}
+
+	.eight h4::before {
+	    width: 24px;
+        height: 24px;
+        top: 0;
+        left: -24px;w
+	}
+
+	.eight .box {
+		margin-top:24px;
+	}
+
+	.eight .box .logo:nth-child(1) {
+		width: 160px;
+        height: 160px;
+        border-radius: 12px;
+        margin-right: 20px;
+	}
+
+	.eight .box .logo:nth-child(2) {
+		width: 300px;
+        height: 100px;
+	}
+
+	/*nine*/
+	.nine {
+		width: 820px;
+        height: 520px;
+        margin: 160px auto 0 auto;
+        background-position: 300px center;
+	}
+
+	.nine .text {
+		width: 480px;
+        margin-left: 50px;
+        padding-top: 48px;
+	}
+
+	.nine h3{
+	    font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 24px !important;
+	}
+
+	.nine h3::before {
+	    width: 100px;
+        height: 200px;
+        top: -82px;
+        left: -112px;
+	}
+
+	.nine h5 {
+	    font-size: 18px;
+        line-height: 23px;
+        margin-bottom:6px !important;
+	}
+
+	.nine h6 {
+		margin-top: 24px !important;
+        font-size: 14px;
+        line-height: 17px;
+	}
+
+	/*footer*/
+	.footer {
+        width: calc(100vw - 100px);
+        padding: 48px 50px 64px 50px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+    }
+
+	.footer h5 {
+		font-weight:400;
+		font-size:15px;
+	}
+
+	.footer p {
+		margin-top:12px !important;
+	}
+
+	@media (max-width: 860px) {
+		body {
+			width:680px;
+		}
+
+		h2 {
+	        font-size: 52px;
+	    }
+
+		h3 {
+	        font-size: 32px;
+	    }
+
+		h4 {
+	        font-size: 22px;
+	    }
+
+		/*one*/
+		.one::after {
+			width: 1280px;
+            height: 866px;
+            top: -220px;
+            left: -300px;
+		}
+
+		.one h3 {
+			line-height: 38px;
+            width: 660px;
+            margin: 280px 0 0 40px !important;
+		}
+
+		.rocketjump {
+			width: 640px;
+            height: 186px;
+            margin-top: 36px;
+		}
+
+		/*two*/
+		.two {
+	        width: 680px;
+	        margin: 220px auto 0 auto;
+	    }
+
+	    .two .box:nth-child(1) {
+	        margin-right: 50px;
+	    }
+
+	    .two .box {
+	        width: 315px;
+	    }
+
+	    .two::after {
+	        width: 998px;
+	        height: 520px;
+	        top: -168px;
+	        left: -154px;
+	    }
+
+	    /*three*/
+	    .three .box:nth-child(1) {
+	        width: 245px;
+	        height: 210px;
+	    }
+
+		.three .box:nth-child(2) {
+	        width: 435px;
+	    }
+
+	    .three .box h2 {
+	        line-height: 52px;
+	    }
+
+	    .three .box h3 {
+	        line-height: 36px;
+	    }
+
+	    /*four*/
+	    .four {
+	        width: 680px;
+	        margin: 160px auto 0 auto !important;
+	    }
+
+	    .four h2 {
+	        font-size: 72px;
+	        line-height: 72px;
+	    }
+
+	    .four .box .list:nth-child(odd) {
+	    	margin:0 50px 48px 0;
+	    }
+
+	    .four .box .list:nth-child(even) {
+	    	margin:0 0 64px 50px;
+	    }
+
+	    .four::after {
+	        width: 1280px;
+	        height: 866px;
+	        top: 500px;
+	        left: -560px;
+	    }
+
+	    /*five*/
+	    .five {
+	        width: 680px;
+	        margin: 580px auto 0 auto !important;
+	    }
+
+	    .five h2 {
+	        margin-bottom: 18px !important;
+	        font-size: 72px;
+	        line-height: 72px;
+	    }
+
+	    .five h5 {
+	        font-size: 18px;
+	        line-height: 21px;
+	        margin-bottom: 6px !important;
+	    }
+
+	    .five h4 {
+	        font-size: 28px;
+	        line-height: 28px;
+	    }
+
+	    .five .box .list {
+	        width: 240px;
+	    }
+
+	    .five .box .list:nth-child(odd) {
+	        margin: 64px 100px 0 80px;
+	    }
+
+	    .five .box .list h5 {
+	        height: auto;
+	        margin-bottom: 9px !important;
+	    }
+
+	    .five::after {
+	        width: 1280px;
+	        height: 854px;
+	        top: -700px;
+	        left: -300px;
+	    }
+
+	    .animation_five {
+	        top: -420px;
+	        left: 160px;
+	        width: 300px;
+	        height: 200px;
+	    }
+
+	    /*six*/
+	    .six h2 {
+	        margin-bottom: 16px !important;
+	        font-size: 62px;
+	        line-height: 62px;
+	    }
+
+	    .six .box {
+	        width: 680px;
+	        margin-top:36px;
+	    }
+
+	    .six .box .list {
+	        width: 680px;
+	        margin-bottom: 26px;
+	    }
+
+	    .six .box .list .logo {
+	        width: 320px;
+	        height: 99px;
+	    }
+
+		.six .box .list .text {
+	        width: 330px;
+	        margin-left: 30px;
+	    }
+
+	    /*seven*/
+	    .seven {
+        	width: 680px;
+        }
+
+        .seven h3 {
+	        font-size: 72px;
+	        line-height: 72px;
+	    }
+
+	    .seven h5 {
+	        font-size: 19px;
+	        line-height: 22px;
+	        width: 620px;
+	        padding: 20px 30px;
+	    }
+
+	    .seven::after {
+	        width: 680px;
+	        height: 454px;
+	        top: -120px;
+	    }
+
+	    /*eight*/
+	    .eight {
+	        width: 680px;
+	        margin: 140px auto 0 auto !important;
+	    }
+
+	    .eight h4 {
+	        font-size: 26px;
+	        line-height: 40px;
+	    }
+
+	    .eight .box .logo:nth-child(1) {
+	        width: 140px;
+	        height: 140px;
+	        margin-right: 16px;
+	    }
+
+	    .eight .box .logo:nth-child(2) {
+	        width: 270px;
+	        height: 90px;
+	    }
+
+	    .eight::after {
+	        width: 680px;
+	        height: 573.75px;
+	        top: -147px;
+	        left: 65px;
+	    }
+
+	    /*nine*/
+	    .nine {
+	        width: 680px;
+	        height: 480px;
+	        margin: 140px auto 0 auto;
+	        background-position: 180px center;
+	    }
+
+	    .nine .text {
+	        width: 400px;
+	        padding-top: 42px;
+	    }
+
+	    .nine h3 {
+	        font-size: 36px;
+	        line-height: 36px;
+	        margin-bottom: 18px !important;
+	    }
+
+	    .nine h3::before {
+	        width: 80px;
+	        height: 160px;
+	        top: -60px;
+	        left: -88px;
+	    }
+
+	    .nine h5 {
+	        font-size: 16px;
+	        line-height: 21px;
+	    }
+
+	    .nine h6 {
+	        margin-top: 18px !important;
+	        font-size: 13px;
+	        line-height: 16px;
+	    }
+
+	    /*footer*/
+	    .footer h5 {
+	    	font-size:13px;
+	    }
+
+	    .footer p {
+	    	font-size:11px;
+	    }
+
+	}
+
+	@media (max-width: 760px) {
+		body {
+			width:560px;
+		}
+
+		h2 {
+	        font-size: 42px;
+	    }
+
+		h3 {
+	        font-size: 24px;
+	    }
+
+		h4 {
+	        font-size: 21px;
+	    }
+
+	    .menu a {
+	    	margin-right: 18px;
+	    }
+
+		/*one*/
+		.one::after {
+			width: 1024px;
+            height: 692px;
+            top: -180px;
+            left: -230px;
+		}
+
+		.one h3 {
+			line-height: 28px;
+            width: 520px;
+            margin: 240px 0 0 40px !important;
+		}
+
+		.rocketjump {
+			width: 520px;
+            height: 151.25;
+            margin-top: 28px;
+		}
+
+		/*two*/
+		.two {
+	        width: 520px;
+            margin: 200px auto 0 auto;
+            height:fit-content;
+	    }
+
+	    .two .box:nth-child(1) {
+	        margin-right: 0;
+	        margin-bottom: 32px;
+	        text-align:left;
+	    }
+
+	    .two .box {
+	        width: 520px;
+	    }
+
+	    .two .box h4 {
+	        line-height: 28px;
+	        min-height: auto;
+	        margin-bottom: 12px !important;
+	    }
+
+	    .two::after {
+            width: 998px;
+            height: 520px;
+            top: -120px;
+            left: -20px;
+        }
+
+	    /*three*/
+	    .three {
+	        width: 520px;
+	        margin-top:60px;
+	    }
+
+	    .three .box:nth-child(1) {
+	        width: 210px;
+            height: 180px;
+	    }
+
+		.three .box:nth-child(2) {
+	        width: 310px;
+	    }
+
+	    .three .box h2 {
+	        line-height: 24px;
+	    }
+
+	    .three .box h3 {
+	        line-height: 28px;
+	    }
+
+	    /*four*/
+	    .four {
+            width: 520px;
+            margin: 120px auto 0 auto !important;
+        }
+
+	    .four h2 {
+	        font-size: 62px;
+            line-height: 62px;
+	    }
+
+	    .four h3 {
+	        line-height: 32px;
+	        margin-bottom: 36px !important;
+	    }
+
+	    .four .box .list .icon {
+	        width: 54px;
+	        height: 54px;
+	        margin-bottom: 8px;
+	    }
+
+	    .four .box .list:nth-child(odd) {
+	    	margin:0 40px 48px 0;
+	    }
+
+	    .four .box .list:nth-child(even) {
+	    	margin:0 0 64px 0;
+	    }
+
+	    .four::after {
+	        width: 1280px;
+	        height: 866px;
+	        top: 420px;
+	        left: -640px;
+	    }
+
+	    /*five*/
+	    .five {
+	        width: 520px;
+            margin: 480px auto 0 auto !important;
+	    }
+
+	    .five h2 {
+	        margin-bottom: 18px !important;
+            font-size: 62px;
+            line-height: 62px;
+	    }
+
+	    .five h5 {
+	        font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 6px !important;
+	    }
+
+	    .five h4 {
+	        font-size: 26px;
+            line-height: 28px;
+            margin-bottom:64px !important;
+	    }
+
+	    .five .box {
+	    	text-align:center;
+	    }
+
+	    .five .box .list {
+	        width: 320px;
+            padding-left: 62px;
+            margin: 0 auto 48px auto;
+            display:block;
+	    }
+
+	    .five .box .list:nth-child(odd) {
+	        margin: 0 auto 48px auto;
+	    }
+
+	    .five .box .list h5 {
+	        height: auto;
+	        margin-bottom: 9px !important;
+	    }
+
+	    .five .box .list p {
+	        line-height: 16px;
+	        text-align: left;
+	    }
+
+	    .five::after {
+	        width: 1024px;
+            height: 683.4px;
+            top: -550px;
+            left: -250px;
+	    }
+
+	    .animation_five {
+	        top: -325px;
+            left: 120px;
+            width: 240px;
+            height: 160px
+	    }
+
+	    /*six*/
+	    .six {
+	        width: 520px;
+	        margin: 380px auto 0 auto !important;
+	    }
+
+	    .six::after {
+	        width: 775px;
+	        height: 475px;
+	        top: -480px;
+	        left: -140px;
+	    }
+
+	    .six h2 {
+	        margin-bottom: 16px !important;
+            font-size: 62px;
+            line-height: 62px;
+            text-align: center;
+	    }
+
+	    .six h4 {
+	        line-height: 24px;
+	        margin-bottom: 64px !important;
+	        text-align: center;
+	    }
+
+	    .six .box {
+	        width: 520px;
+	        margin-top:36px;
+	    }
+
+	    .six .box .list {
+	        width: 520px;
+            margin-bottom: 26px;
+            display: block;
+            text-align: center;
+	    }
+
+	    .six .box .list .logo {
+	        width: 320px;
+            height: 99px;
+            display: block;
+            margin: 0 auto;
+	    }
+
+		.six .box .list .text {
+	        width: 330px;
+            display: block;
+            margin: 24px auto 48px auto;
+	    }
+
+	    /*seven*/
+	    .seven {
+        	width: 520px;
+        }
+
+        .seven h3 {
+	        font-size: 62px;
+	        line-height: 62px;
+	    }
+
+	    .seven h5 {
+	        font-size: 16px;
+	        line-height: 19px;
+	        width: 460px;
+	        padding: 20px 30px;
+	        text-align: center;
+	        font-weight:400;
+	    }
+
+	    .seven::after {
+	        width: 680px;
+	        height: 454px;
+	        top: -120px;
+	        left:-60px;
+	    }
+
+	    /*eight*/
+	    .eight {
+	        width: 520px;
+            margin: 140px auto 0 auto !important;
+	    }
+
+	    .eight h3 {
+	        line-height: 24px;
+	        margin-bottom: 24px !important;
+	    }
+
+	    .eight h4 {
+	        font-size: 24px;
+            line-height: 36px;
+	    }
+
+	    .eight h4::before {
+	        width: 20px;
+	        height: 20px;
+	        top: 0;
+	        left: -20px;
+	    }
+
+	    .eight .box .logo:nth-child(1) {
+	        width: 120px;
+            height: 120px;
+            margin-right: 9px;
+	    }
+
+	    .eight .box .logo:nth-child(2) {
+	        width: 210px;
+            height: 70px;
+	    }
+
+	    .eight::after {
+	        width: 544px;
+            height: 459px;
+            top: -110px;
+            left: 60px;
+	    }
+
+	    /*nine*/
+	    .nine {
+	        height: 460px;
+	        background-position: 140px center;
+	    }
+
+	    .nine .text {
+	        width: 360px;
+            padding-top: 32px;
+	    }
+
+	    .nine h3 {
+	        font-size: 32px;
+	        line-height: 32px;
+	        margin-bottom: 15px !important;
+	    }
+
+	    .nine h3::before {
+	        width: 80px;
+	        height: 160px;
+	        top: -60px;
+	        left: -88px;
+	    }
+
+	    .nine h5 {
+	        font-size: 14px;
+	        line-height: 19px;
+	    }
+
+	    .nine h6 {
+	        margin-top: 18px !important;
+	        font-size: 12px;
+	        line-height: 15px;
+	    }
+
+	    /*footer*/
+	    .footer h5 {
+	    	font-size:13px;
+	    }
+
+	    .footer p {
+	    	font-size:11px;
+	    }
+	}
+
+	@media (max-width: 620px) {
+		body {
+			width:calc(100vw - 30px);
+		}
+
+		h2 {
+			font-size:42px;
+		}
+
+		h3 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        h5 {
+	        font-size: 16px;
+	    }
+
+	    p {
+	        font-size: 16px;
+	    }
+
+		/*menu*/
+		.menu {
+            width: calc(100vw - 30px);
+            padding: 24px 15px 50px 15px;
+            left: 0;
+        }
+
+	    .menu a:nth-child(1) {
+            width: 150px;
+            height: 68px;
+	        display: inline-block;
+	        margin-left: -12px;
+	        margin-right: 0;
+	    }
+
+	    .menu a {
+            margin-right: 18px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .menu a:nth-child(6) {
+	        width: 12px;
+	        height: 12px;
+	        margin-top: -12px !important;
+	    }
+
+	    /*one*/
+	    .one h3 {
+            line-height: 32px;
+            width: fit-content;
+            margin: 280px 0 0 20px !important;
+        }
+
+        .rocketjump {
+            width: 460px;
+            height: 140px;
+            margin-top: 24px;
+        }
+
+        .one::after {
+            left: -280px;
+        }
+
+        /*two*/
+        .two {
+        	width:calc(100vw - 30px);
+        	text-align:center;
+        }
+        .two .box {
+            width: calc(100vw - 60px);
+            display: block;
+            text-align: center !important;
+            margin:0 auto 48px auto !important;
+        }
+
+        .two .box h4 {
+        	line-height:28px;
+        	margin-bottom: 24px !important;
+        }
+
+        .two .box h5 {
+	        line-height: 18px;
+	        margin-bottom: 6px !important;
+	    }
+
+	    .two::after {
+            left: calc(50vw - 510px);
+            top:-20px;
+            opacity:.25;
+        }
+
+        /*three*/
+        .three {
+            width: calc(100vw - 30px);
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .three .box {
+        	display:block;
+        	margin:0 auto;
+        }
+
+        .three .box:nth-child(1) {
+            width: 240px;
+            height: 213px;
+        }
+
+        .three .box:nth-child(2) {
+            width: fit-content;
+            margin-top: 18px;
+        }
+
+        .three .box h2 {
+            line-height: 42px;
+        }
+
+        .three .box h3 {
+            line-height: 32px;
+        }
+
+        /*four*/
+        .four {
+            width: calc(100vw - 30px);
+            margin: 120px auto 0 auto !important;
+        }
+
+        .four h2 {
+            font-size: 54px;
+            line-height: 54px;
+        }
+
+        .four h3 {
+            line-height: 32px;
+            margin-bottom: 36px !important;
+        }
+
+        .four .box {
+        	text-align: center;
+        }
+
+        .four .box .list {
+	        width: calc(100vw - 30px);
+	        margin: 0 auto 48px !important;
+	    }
+
+        .four .box .list .icon {
+            width: 62px;
+            height: 62px;
+            margin: 0 auto 24px;
+        }
+
+        .four .box .list h5 {
+	        font-size: 21px;
+	        line-height: 24px;
+	        height: auto;
+	        margin-bottom: 24px !important;
+	    }
+
+	    .four .box .list p {
+	        line-height: 21px;
+	        width: 75%;
+	        margin: 0 auto;
+	    }
+
+        .four::after {
+            top: 0;
+            left:calc(50vw - 1020px);
+            opacity:.25;
+        }
+
+        /*five*/
+        .five {
+            width: calc(100vw - 30px);
+            margin: 480px auto 0 auto !important;
+        }
+
+        .five::after {
+            left: calc(50vw - 512px);
+        }
+
+        .five h2 {
+            margin-bottom: 18px !important;
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        .five h4 {
+            font-size: 19px;
+            line-height: 22px;
+            margin-bottom: 64px !important;
+        }
+
+        .five h5 {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 6px !important;
+        }
+
+        .five .box .list h5 {
+            height: auto;
+            margin-bottom: 6px !important;
+        }
+
+        .five .box .list h5::before {
+	        width: 62px;
+            height: 62px;
+            top: -22px;
+            left: -72px;
+	    }
+
+	    .five .box .list p {
+            line-height: 19px;
+            text-align: left;
+        }
+
+        .five .box .list {
+            width: calc(100vw - 150px);
+            padding-left: 60px;
+        }
+
+        .animation_five {
+            left: calc(50vw - 140px);
+        }
+
+        /*six*/
+        .six {
+            width: calc(100vw - 30px);
+            margin: 380px auto 0 auto !important;
+        }
+
+        .six::after {
+            left: calc(50vw - 420px);
+        }
+
+        .six h2 {
+            margin-bottom: 24px !important;
+            font-size: 58px;
+            line-height: 58px;
+            text-align: center;
+        }
+
+        .six h4 {
+            line-height: 28px;
+            margin-bottom: 48px !important;
+            text-align: center;
+        }
+
+        .six .box {
+            width: calc(100vw - 30px);
+            margin-top: 36px;
+        }
+
+        .six .box .list {
+            width: calc(100vw - 30px);
+            margin-bottom: 26px;
+            display: block;
+            text-align: center;
+        }
+
+        .six .box .list .logo {
+            width: 280px;
+            height: 90px;
+        }
+
+        .six .box .list .text {
+            width: 75%;
+            display: block;
+            margin: 24px auto 48px auto;
+        }
+
+        .six .box .list .text h5 {
+	        font-size: 24px;
+	        line-height: 27px;
+	        margin-top: 8px !important;
+	        margin-bottom: 6px !important;
+	    }
+
+	    .six .box .list p {
+	        line-height: 20px;
+	    }
+
+	    /*seven*/
+	    .seven {
+	    	width:calc(100vw - 30px);
+	    }
+
+	    .seven h3 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        .seven h5 {
+            font-size: 16px;
+            line-height: 20px;
+            width: calc(100vw - 70px);
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .seven::after {
+            left: calc(50vw - 340px);
+        }
+
+        /*eight*/
+        .eight {
+            width: calc(100vw - 30px);
+            margin: 120px auto 0 auto !important;
+        }
+
+        .eight h3 {
+            line-height: 28px;
+            margin-bottom: 16px !important;
+        }
+
+        .eight h4 {
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        .eight h4::before {
+            width: 18px;
+            height: 18px;
+            left: -18px;
+        }
+
+        .eight .box {
+	        margin-top: 12px;
+	    }
+
+	    .eight .box .logo:nth-child(1) {
+            width: 90px;
+            height: 90px;
+            margin-right: 12px;
+        }
+
+        .eight .box .logo:nth-child(2) {
+            width: 180px;
+            height: 60px;
+        }
+
+        .eight::after {
+            width: 500px;
+            height: 280px;
+            top: -25px;
+            left: 50px;
+        }
+
+        .nine {
+            height: fit-content;
+            background-position: right center;
+            width: 100vw;
+        }
+
+        .nine .text {
+            width: calc(100vw - 120px);
+            padding-top: 48px;
+            padding-bottom: 54px;
+            margin-left: 15px;
+        }
+
+        .nine h3 {
+            font-size: 32px;
+            line-height: 28px;
+            margin-bottom: 15px !important;
+        }
+
+        .nine h3::before {
+        	display:none;
+        }
+
+        .nine h5 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        .nine h6 {
+            margin-top: 18px !important;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        /*footer*/
+        .footer {
+	        width: calc(100vw - 40px);
+	        padding: 32px 20px 42px 20px;
+	    }
+
+	    .footer h5 {
+            font-size: 16px;
+        }
+
+        .footer p {
+            font-size: 12px;
+            line-height:16px;
+        }
+
+	}
+
+	@media (max-width: 520px) {
+
+		h3 {
+			font-size: 24px;
+		}
+
+		h4 {
+			font-size: 21px;
+		}
+
+		h5 {
+			font-size:15px;
+		}
+		
+		/*menu*/
+		.menu {
+            padding: 0 15px 50px 15px;
+        }
+
+	    .menu a:nth-child(1) {
+	        width: 120px;
+            height: 54px;
+            display: block;
+            margin-left: -12px;
+            margin-bottom: 6px !important;
+	    }
+
+	    .menu a {
+            margin-right: 18px;
+            font-size: 21px;
+            line-height: 21px;
+        }
+
+        .menu a:nth-child(6) {
+	        width: 18px;
+	        height: 18px;
+	        margin-top: -18px !important;
+	    }
+
+	    /*one*/
+	    .one h3 {
+            line-height: 28px;
+            width: fit-content;
+            margin: 200px 0 0 20px !important;
+        }
+
+        .rocketjump {
+            width: 380px;
+            height: 120px;
+            margin-top: 18px;
+        }
+
+        .one::after {
+            left: -280px;
+        }
+
+        /*two*/
+        .two .box h4 {
+            line-height: 28px;
+            margin-bottom: 18px !important;
+        }
+
+        .two .box h5 {
+            line-height: 18px;
+            margin-bottom: 9px !important;
+        }
+
+        /*five*/
+        .five h2 {
+            width: 95%;
+            margin: 0 auto 18px auto;
+        }
+
+        .five .box .list h5::before {
+            width: 54px;
+            height: 54px;
+        }
+
+        /*six*/
+        .six h2 {
+            font-size: 52px;
+            line-height: 52px;
+        }
+
+        .six h4 {
+            line-height: 21px;
+            font-size:18px;
+        }
+
+        /*seven*/
+        .seven h5 {
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        /*eight*/
+        .eight h4 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .eight h4::before {
+            width: 15px;
+            height: 15px;
+            left: -15px;
+        }
+
+        .eight::after {
+            left: -25px;
+        }
+
+        /*nine*/
+        .nine {
+            background-image: url('flag_fade.jpg');
+        }
+    }
+
+    @media (max-width: 420px) {
+
+		/*menu*/
+
+		p {
+			font-size:14px;
+		}
+	    .menu a:nth-child(1) {
+	        width: 120px;
+            height: 54px;
+	        display: block;
+	        margin-left: -12px;
+	    }
+
+	    .menu a {
+            margin-right: 14px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .menu a:nth-child(6) {
+	        width: 12px;
+	        height: 12px;
+	        margin-top: -12px !important;
+	    }
+
+	    /*one*/
+	    .one h3 {
+            line-height: 21px;
+            width: fit-content;
+            margin: 200px 0 0 20px !important;
+        }
+
+        .rocketjump {
+            width: 370px;
+            height: 110px;
+            margin-top: 12px;
+        }
+
+        .one::after {
+            left: -280px;
+        }
+
+        /*four*/
+        .four h2 {
+            font-size: 42px;
+            line-height: 42px;
+        }
+
+        /*nine*/
+        .nine h3 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        .nine h5 {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .nine h6 {
+            font-size: 13px;
+            line-height: 17px;
+        }
+
+        /*footer*/
+        .footer h5 {
+            font-size: 13px;
+        }
+
+        .footer p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+}
