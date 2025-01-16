@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+<g id="reliable">
+</g>
+<g id="speed">
+</g>
+<g id="Cost">
+</g>
+<g id="Flexibility">
+</g>
+<g id="Green">
+</g>
+<g id="Pink">
+</g>
+<g id="Blue">
+	<g>
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="160.1,167.6 291.5,207.2 307.5,297.7 				"/>
+			</defs>
+			
+				<linearGradient id="SVGID_00000094591493208780433640000011768961463807495049_" gradientUnits="userSpaceOnUse" x1="158.2542" y1="170.8885" x2="325.1209" y2="267.2291">
+				<stop  offset="0" style="stop-color:#00B4FF;stop-opacity:0.6"/>
+				<stop  offset="9.034479e-02" style="stop-color:#00B3FF;stop-opacity:0.5458"/>
+				<stop  offset="1" style="stop-color:#00AAFF;stop-opacity:0"/>
+			</linearGradient>
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:url(#SVGID_00000094591493208780433640000011768961463807495049_);"/>
+			<clipPath id="SVGID_00000152255109364661680750000015831064195601098665_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+		</g>
+	</g>
+</g>
+<g id="s1">
+</g>
+<g id="s2">
+</g>
+<g id="s3">
+</g>
+<g id="s4">
+</g>
+</svg>

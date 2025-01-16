@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta
             name="viewport"
-            content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+            content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"
         />
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="assets/styles/style.css" />
@@ -18,7 +18,12 @@
             <a href="#"></a>
             <a href="#">Home</a>
             <a href="#solutions-pos">Solutions</a>
-            <a href="#" onclick="return openModalContact()">Demo</a>
+            <!-- <a href="#" onclick="return openModalContact()">Demo</a> -->
+            <a
+                href="#"
+                onclick="alert('Please request via email: contact@innilabs.co.id'); event.preventDefault();"
+                >Demo</a
+            >
             <a href="#about">About Us</a>
             <a href="#"></a>
         </div>
@@ -28,7 +33,16 @@
                 Are you <strong>ready</strong><br />for the
                 <strong>moment</strong> of
             </h3>
-            <div class="rocketjump"></div>
+            <div class="rocketjump">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+            </div>
         </div>
 
         <div class="two">
@@ -279,12 +293,14 @@
                 <div class="list">
                     <div class="logo"></div>
                     <div class="text">
+                        <!-- <h5>innilabs Approved Deployment (for SCM)</h5> -->
                         <h5>
                             <span style="background-color: seagreen"
                                 >&nbsp;innilabs Approved Deployment (for
                                 SCM)&nbsp;</span
                             >
                         </h5>
+
                         <p>
                             A component as DevOps lifecycle tool, that allows
                             your team to set up approval workflows for changes
@@ -374,7 +390,7 @@
         </div>
 
         <div class="footer">
-            <h5>@2024, PT. CNA INNILABS INDONESIA</h5>
+            <h5>@2025, PT. CNA INNILABS INDONESIA</h5>
             <p>
                 E-mail : contact@innilabs.co.id<br />SOHO CAPITAL Podomoro City,
                 19th Floor,<br />Jl. Letjen. S. Parman Kav. 28, Tanjung Duren
@@ -408,6 +424,4 @@
         </div>
         <!-- popup: end -->
     </body>
-
-    <script></script>
 </html>
