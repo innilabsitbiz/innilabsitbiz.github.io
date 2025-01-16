@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
+@keyframes backgroundFade {
+    0% {
+      filter: brightness(0.8);
+    }
+    50% {
+      filter: brightness(1.1);
+    }
+    100% {
+      filter: brightness(0.8);
+    }
+}
+
 body {
     padding: 0;
     overflow-y: scroll;
@@ -197,6 +209,7 @@ a:-webkit-any-link {
     content: " ";
     position: absolute;
     background-image: url(2.png);
+    animation: backgroundFade 5s infinite;
     background-repeat: no-repeat;
     background-size: 75% auto;
     background-position: center center;
@@ -263,6 +276,7 @@ a:-webkit-any-link {
     content: " ";
     position: absolute;
     background-image: url("4.png");
+    animation: backgroundFade 5s infinite;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -349,6 +363,7 @@ a:-webkit-any-link {
     content: " ";
     position: absolute;
     background-image: url(5.jpg);
+    animation: backgroundFade 9s infinite;
     background-repeat: no-repeat;
     background-size: 75% auto;
     background-position: center center;
@@ -444,6 +459,7 @@ a:-webkit-any-link {
     content: " ";
     position: absolute;
     background-image: url(6.jpg);
+    animation: backgroundFade 5s infinite;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
