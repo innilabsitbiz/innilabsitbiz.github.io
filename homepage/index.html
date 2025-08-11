@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innilabs Indonesia - Financial-Grade IT Systems & AI Solutions</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* ---------------------------------- */
+        /* Global Styles             */
+        /* ---------------------------------- */
+        :root {
+            --primary-blue: #0d2c54;
+            --secondary-blue: #1a4a8a;
+            --accent-green: #28a745;
+            --accent-green-hover: #218838;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #6c757d;
+            --text-dark: #212529;
+            --text-light: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 60px auto;
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-green);
+            color: var(--text-light);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-green-hover);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-light);
+            border-color: var(--text-light);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--text-light);
+            color: var(--primary-blue);
+        }
+
+        /* Animation on Scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* ---------------------------------- */
+        /* Header                 */
+        /* ---------------------------------- */
+        .main-header {
+            background: var(--text-light);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .main-header.scrolled {
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+        .logo span {
+            font-weight: 400;
+            color: var(--accent-green);
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            padding: 10px 18px;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-green);
+            transition: width 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            color: var(--accent-green);
+        }
+        .main-nav a:hover::after {
+            width: 60%;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .lang-switcher {
+            font-size: 0.9rem;
+        }
+        
+        .lang-switcher a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            padding: 0 5px;
+            font-weight: 500;
+        }
+        
+        .lang-switcher a.active {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        /* ---------------------------------- */
+        /* Hero Section             */
+        /* ---------------------------------- */
+        #hero {
+            background: linear-gradient(rgba(13, 44, 84, 0.85), rgba(13, 44, 84, 0.85)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop') no-repeat center center/cover;
+            color: var(--text-light);
+            padding: 200px 0 150px 0;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            max-width: 850px;
+            margin: 0 auto 25px auto;
+            color: var(--text-light);
+            line-height: 1.3;
+        }
+
+        #hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        #hero .cta-buttons .btn {
+            margin: 0 10px;
+        }
+
+        /* ---------------------------------- */
+        /* Core Solutions Section      */
+        /* ---------------------------------- */
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .solution-card {
+            background: var(--text-light);
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid var(--medium-gray);
+            transition: all 0.3s ease;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+            border-color: transparent;
+        }
+
+        .solution-card .icon {
+            font-size: 3rem;
+            color: var(--accent-green);
+            margin-bottom: 25px;
+        }
+        
+        .solution-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .solution-card p {
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+        }
+        
+        /* ---------------------------------- */
+        /* AI Showcase Section        */
+        /* ---------------------------------- */
+        #ai-showcase {
+            background-color: var(--light-gray);
+        }
+
+        .ai-showcase-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .ai-showcase-item:not(:last-child) {
+            margin-bottom: 100px;
+        }
+
+        .ai-showcase-item.reverse {
+            grid-template-columns: 1fr 1fr;
+        }
+        .ai-showcase-item.reverse .ai-demo-visual {
+            grid-column: 1;
+            grid-row: 1;
+        }
+         .ai-showcase-item.reverse .ai-showcase-text {
+            grid-column: 2;
+        }
+
+        .ai-demo-visual {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ai-showcase-grid h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .ai-showcase-text p {
+            margin-bottom: 20px;
+        }
+
+        /* AI Demo Specifics */
+        .chatbot-demo {
+            font-family: 'Menlo', 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #444;
+            width: 100%;
+        }
+        .chat-bubble {
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            max-width: 80%;
+        }
+        .user {
+            background: #e9ecef;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+        .bot {
+            background: #d4edda;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+        .bot strong { color: var(--accent-green-hover); }
+
+        .ocr-demo {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .ocr-image {
+            width: 40%;
+            text-align: center;
+            color: var(--dark-gray);
+        }
+        .ocr-image i { font-size: 5rem; }
+        .ocr-data {
+            width: 60%;
+            font-family: 'Menlo', 'Courier New', monospace;
+        }
+        .ocr-data div { margin-bottom: 10px; }
+        .ocr-data span { color: var(--dark-gray); }
+        .ocr-data strong { color: var(--text-dark); }
+        
+        .enhancement-demo {
+            text-align: center;
+            color: var(--dark-gray);
+        }
+        .enhancement-demo i {
+            font-size: 4rem;
+            color: var(--primary-blue);
+        }
+        .enhancement-demo .plus {
+            font-size: 2rem;
+            color: var(--accent-green);
+            margin: 0 20px;
+        }
+
+        /* ---------------------------------- */
+        /* Business Approach Section    */
+        /* ---------------------------------- */
+        .approach-steps {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            position: relative;
+            gap: 30px;
+        }
+        
+        .approach-steps::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 15%;
+            right: 15%;
+            height: 3px;
+            background-image: linear-gradient(to right, var(--medium-gray) 50%, transparent 50%);
+            background-size: 16px 3px;
+            z-index: -1;
+        }
+
+        .step {
+            width: 30%;
+        }
+
+        .step .icon {
+            width: 100px;
+            height: 100px;
+            background: var(--text-light);
+            color: var(--accent-green);
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            border: 3px solid var(--accent-green);
+            box-shadow: 0 0 0 5px var(--text-light), 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .step:hover .icon {
+            transform: scale(1.1);
+            background: var(--accent-green);
+            color: var(--text-light);
+        }
+        
+        .step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        /* ---------------------------------- */
+        /* Clients Section          */
+        /* ---------------------------------- */
+        #clients {
+            background-color: var(--light-gray);
+        }
+
+        .clients-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.4s ease;
+        }
+        .clients-logos:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .clients-logos i {
+            font-size: 3rem;
+            color: var(--dark-gray);
+        }
+        .clients-logos span {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #999;
+        }
+
+        /* ---------------------------------- */
+        /* Footer               */
+        /* ---------------------------------- */
+        .main-footer {
+            background: var(--primary-blue);
+            color: var(--text-light);
+            padding: 80px 0 40px 0;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-grid h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        
+        .footer-grid ul { list-style: none; }
+        .footer-grid li { margin-bottom: 10px; }
+        .footer-grid a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .footer-grid a:hover {
+            color: var(--text-light);
+            padding-left: 5px;
+        }
+        .footer-about p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--secondary-blue);
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+        
+        /* ---------------------------------- */
+        /* Responsive              */
+        /* ---------------------------------- */
+        @media (max-width: 992px) {
+            h2 { font-size: 2.2rem; }
+            #hero h1 { font-size: 2.8rem; }
+            .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+            .ai-showcase-item, .ai-showcase-item.reverse { grid-template-columns: 1fr; }
+            .ai-showcase-item.reverse .ai-demo-visual { grid-row: auto; }
+            .ai-showcase-item.reverse .ai-showcase-text { grid-column: auto; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+            .main-nav { display: none; }
+            .hamburger { display: block; }
+
+            /* Mobile Nav */
+            .main-nav {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-in-out;
+            }
+            .main-nav.active {
+                max-height: 500px; /* or enough height */
+            }
+            .main-nav ul {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            .main-nav li {
+                text-align: center;
+            }
+            .main-nav a {
+                padding: 15px;
+                display: block;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            section { padding: 80px 0; }
+            .approach-steps { flex-direction: column; align-items: center; gap: 50px; }
+            .approach-steps::before { display: none; }
+            .step { width: 90%; }
+        }
+        
+        @media (max-width: 576px) {
+            #hero h1 { font-size: 2.2rem; }
+            #hero p { font-size: 1.1rem; }
+            .solutions-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            #hero .cta-buttons { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ================== HEADER ================== -->
+    <header class="main-header" id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">Innilabs<span>.</span></a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#solutions">Services</a></li>
+                    <li><a href="#ai-showcase">AI Solutions</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-switcher">
+                    <a href="#">KO</a>|<a href="#" class="active">EN</a>|<a href="#">ID</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================== HERO SECTION ================== -->
+        <section id="hero">
+            <div class="container">
+                <h1 class="fade-in">Financial-Grade IT Systems & AI Solutions</h1>
+                <p class="fade-in">We accelerate your digital transformation in Indonesia with reliable systems and innovative AI solutions.</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+                    <a href="#" class="btn btn-secondary">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== CORE SOLUTIONS ================== -->
+        <section id="solutions">
+            <div class="container">
+                <h2 class="fade-in">Our Core Solutions</h2>
+                <p class="section-subtitle fade-in">Driving Innovation, Ensuring Reliability. We provide end-to-end solutions for the most complex digital challenges.</p>
+                <div class="solutions-grid">
+                    <div class="solution-card fade-in">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Financial Systems</h3>
+                        <p>Top-tier security and stability for your crucial services, built on a proven architecture.</p>
+                    </div>
+                    <div class="solution-card fade-in" style="transition-delay: 0.1s;">
+                        <div class="icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Integrated Solutions</h3>
+                        <p>Optimize processes with SCM, Service Orchestration, MSA, & DevOps for maximum efficiency.</p>
+                    </div>
+                    <div class="solution-card fade-in" style="transition-delay: 0.2s;">
+                        <div class="icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI-Powered Innovation</h3>
+                        <p>Enhance customer service and automate processes with intelligent chatbots and OCR technology.</p>
+                    </div>
+                    <div class="solution-card fade-in" style="transition-delay: 0.3s;">
+                        <div class="icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Rapid Prototyping</h3>
+                        <p>Quickly validate your business ideas with a lean approach and build strong partnerships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== AI SHOWCASE ================== -->
+        <section id="ai-showcase">
+            <div class="container">
+                <h2 class="fade-in">Unlocking Business Potential with AI</h2>
+                <p class="section-subtitle fade-in">See how our AI solutions turn data into a strategic asset and automate complex tasks.</p>
+                
+                <div class="ai-showcase-item">
+                    <div class="ai-showcase-text fade-in">
+                        <h3>Document-Based AI Chatbot</h3>
+                        <p>Get instant, accurate answers from your internal manuals, policies, or knowledge bases. Reduce support team workload and increase customer satisfaction with 24/7 context-aware responses.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="ai-demo-visual chatbot-demo fade-in" style="transition-delay: 0.2s;">
+                        <div>
+                            <div class="chat-bubble user">How do I file an insurance claim?</div>
+                            <div class="chat-bubble bot">According to your policy (p. 5), you need to prepare <strong>documents A, B, and C</strong>, then fill out the online form on the customer portal.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-showcase-item reverse">
+                    <div class="ai-demo-visual enhancement-demo fade-in" style="transition-delay: 0.2s;">
+                        <div>
+                            <i class="fas fa-server"></i>
+                            <span class="plus"><i class="fas fa-plus"></i></span>
+                            <i class="fas fa-brain"></i>
+                            <p style="margin-top: 20px;">[ Existing System + AI Module ]</p>
+                        </div>
+                    </div>
+                    <div class="ai-showcase-text fade-in">
+                        <h3>AI Module Enhancement</h3>
+                        <p>Seamlessly integrate advanced AI modules into your existing systems. Enhance functionalities like fraud detection, customer churn prediction, and process optimization without a complete overhaul.</p>
+                        <a href="#" class="btn btn-primary">Explore Modules</a>
+                    </div>
+                </div>
+
+                <div class="ai-showcase-item">
+                    <div class="ai-showcase-text fade-in">
+                        <h3>Intelligent OCR Data Extraction</h3>
+                        <p>Automate data entry from invoices, ID cards, and other documents with high precision. Our solution can operate <strong>securely on-premise without an internet connection</strong>, ensuring your data remains private. Accelerate onboarding, claims, and verification processes.</p>
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                    </div>
+                    <div class="ai-demo-visual ocr-demo fade-in" style="transition-delay: 0.2s;">
+                        <div class="ocr-image">
+                            <i class="fa-regular fa-id-card"></i>
+                            <div>ID_Card.jpg</div>
+                        </div>
+                        <div class="ocr-data">
+                            <div><span>NAME</span><br><strong>BUDI SANTOSO</strong></div>
+                            <div><span>ID (NIK)</span><br><strong>3171...0001</strong></div>
+                            <div><span>ADDRESS</span><br><strong>JL. MERDEKA...</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================== BUSINESS APPROACH ================== -->
+        <section id="approach">
+            <div class="container">
+                <h2 class="fade-in">From Idea to Reality</h2>
+                 <p class="section-subtitle fade-in">Our 3-step partnership approach ensures transparency, speed, and project success.</p>
+                <div class="approach-steps">
+                    <div class="step fade-in">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>1. Rapid Prototyping</h3>
+                        <p>We turn your idea into a functional prototype in weeks, not months, for quick market validation.</p>
+                    </div>
+                    <div class="step fade-in" style="transition-delay: 0.2s;">
+                        <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>2. Business Viability Test</h3>
+                        <p>We test market feasibility and gather real-world data for smart, informed decision-making.</p>
+                    </div>
+                    <div class="step fade-in" style="transition-delay: 0.4s;">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <h3>3. Build & Partnership</h3>
+                        <p>We build the full-scale solution and grow with you as a long-term strategic technology partner.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ================== CLIENTS ================== -->
+        <section id="clients">
+            <div class="container">
+                <h2 class="fade-in">Trusted by Leading Companies</h2>
+                <div class="clients-logos fade-in">
+                    <i class="fab fa-diaspora" title="Client A"></i>
+                    <i class="fab fa-dyalog" title="Partner B"></i>
+                    <i class="fab fa-evernote" title="Startup C"></i>
+                    <i class="fab fa-fedex" title="Enterprise D"></i>
+                    <i class="fab fa-gitkraken" title="Tech Company E"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>Innilabs Indonesia</h4>
+                    <p>Your trusted partner for digital transformation, delivering financial-grade systems and cutting-edge AI innovation.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#solutions">Services</a></li>
+                        <li><a href="#ai-showcase">AI Solutions</a></li>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:contact.id@innilabs.com">contact.id@innilabs.com</a></li>
+                        <li><a href="#">Jakarta, Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Innilabs Indonesia. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Animate on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // --- Sticky Header ---
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // --- Mobile Hamburger Menu ---
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('main-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>
