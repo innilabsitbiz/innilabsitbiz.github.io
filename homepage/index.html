@@ -21,12 +21,14 @@
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
 
+    <!-- Fonts -->
+     <link rel="stylesheet" href="fonts/rubik-distressed/stylesheet.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 
 </head>
 
-<body class="bg-light-paper">
+<body class="overflow-x-hidden">
 
     <!-- Add your site or application content here -->
     <div>
@@ -34,7 +36,41 @@
             <div class="position-absolute d-flex justify-content-center w-100" style="z-index: -9999;">
                 <img src="img/watercolor-shade.png" alt="watercolor shade" >
             </div>
-            <div class="bg-white shadow sticky-top">
+            <nav id="topNavbar" class="navbar navbar-expand-lg bg-white shadow sticky-top" style="opacity: .95;">
+                <div class="container mt-auto">
+                    <a href="/homepage" class="navbar-brand">
+                        <img src="img/logo-innilabs.png" alt="Innilabs Indonesia" height="64">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="mainMenu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto mb-lg-0 fs-5">
+                            <li class="nav-item px-3">
+                                <a href="/homepage" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a href="#about" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a href="#products" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a href="#solutions" class="nav-link">Solutions</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a href="#contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex p-3">
+                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle fw-bold">EN</button>
+                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle">ID</button>
+                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle">KR</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="bg-white shadow sticky-top d-none">
                 <div class="container pb-2">
                     <div class="d-flex justify-content-between align-items-center fs-5 pt-5">
                         <a href="/">
@@ -43,8 +79,8 @@
                         <div>
                         <a href="/" class="mx-2 text-decoration-none link-dark active">Home</a>
                         <a href="#about" class="mx-2 text-decoration-none link-dark">About</a>
-                        <a href="#products" class="mx-2 text-decoration-none link-dark">Services</a>
-                        <a href="#try" class="mx-2 text-decoration-none link-dark">Solutions</a>
+                        <a href="#products" class="mx-2 text-decoration-none link-dark">Products</a>
+                        <a href="#solutions" class="mx-2 text-decoration-none link-dark">Solutions</a>
                         <a href="#contact" class="mx-2 text-decoration-none link-dark">Contact</a>
                         </div>
                         <div>
@@ -57,73 +93,68 @@
             </div>
             <div class="d-flex flex-column justify-content-center mb-5">
                 <div class="d-flex justify-content-center my-5 py-3">
-                    <img src="img/hero-illustration.png" alt="Hero Illustration">
+                    <img src="img/hero-illustration.png" alt="Hero Illustration" style="max-width: 85vw;">
                 </div>
                 <div class="mb-5">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="d-flex">
-                                <img src="img/orange-stroke.png" alt="orange stroke" class="object-fit-contain">
-                                <h3 class="fw-semibold text-orange text-center display-5"><strong>3 Main Focuses</strong></h3>
+                                <img src="img/orange-stroke.png" alt="orange stroke" class="object-fit-contain me-2" style="height: 5.25rem;">
+                                <h3 class="text-orange text-center display-5 text-chalk"><strong>3 Main Focuses</strong></h3>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 px-5 px-lg-0">
                             <h3 class="fw-semibold text-center text-deepblue display-3"><strong>BUILD THE FUTURE WITH US</strong></h3>
                             <p class="text-center text-dark fs-5">We don't just deploy technology. We partner with you to architect the next era of your business.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-white mb-5" style="border-radius: 50% 50% 50% 50% / 20% 20% 10% 10%; padding-bottom: 12rem;">
+            <div id="about" class="bg-white mb-5">
                 <div class="d-flex justify-content-center">
-                    <div style="margin-top: 17rem;">
+                    <div class="d-none d-lg-block" style="margin-top: 17rem;">
                         <div class="bg-thinorange rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
                                 style="width: 150px; height: 150px;">
                             <img src="img/microservice.png" alt="Microservice" width="120">
                         </div>
                     </div>
-                    <div style="margin-top: 10rem;">
+                    <div class="d-none d-lg-block" style="margin-top: 10rem;">
                         <div class="bg-thinorange rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
                                 style="width: 150px; height: 150px;">
                             <img src="img/cloudservice.png" alt="Cloudservice" width="150">
                         </div>
                     </div>
-                    <div style="margin: 5rem;">
+                    <div class="" style="margin: 5rem;">
                         <div class="bg-thinorange rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
                                 style="width: 250px; height: 250px; background-image: url('img/tech-laptop.png'); background-size: cover;">
                         </div>
                     </div>
-                    <div style="margin-top: 10rem;">
+                    <div class="d-none d-lg-block" style="margin-top: 10rem;">
                         <div class="bg-thinred rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
                                 style="width: 150px; height: 150px;">
                             <img src="img/devops.png" alt="DevOps" width="130">
                         </div>
                     </div>
-                    <div style="margin-top: 17rem;">
+                    <div class="d-none d-lg-block" style="margin-top: 17rem;">
                         <div class="bg-thinred rounded-circle shadow-sm d-flex justify-content-center align-items-center" 
                                 style="width: 150px; height: 150px;">
                             <img src="img/chatbot.png" alt="Chatbot" width="130">
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center" style="margin-bottom: 7rem;">
-                    <div class="bg-thinblue rounded-circle" style="transform: translateY(-64px); padding: 6rem 16rem 5rem; background-image: url('img/oval-dashes.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                <div class="d-flex justify-content-center">
+                    <div id="whoWeAre" class="bg-thinblue rounded-circle">
                         <h3 class="fw-bold text-center text-lightblue display-3">WE ARE</h3>
                         <p class="fs-5 text-center" style="max-width: 400px;">A specialized team in designing and delivering Cutting-edge Service Systems and Business Consultation infused with the power of AI</p>
                     </div>
                 </div>
-                <div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-3"></div>
-                            <div class="col-lg-6">
-                                <h3 class="fw-bold text-center text-deepblue display-5">OUR PRODUCTS</h3>
-                            </div>
-                            <div class="col-lg-3 bg-danger">
-                                <h3 class="fw-semibold text-deepblue display-3"><strong>What We Have</strong></h3>
-                            </div>
+                <div id="products" style="padding-top: 17rem;">
+                    <div class="">
+                        <div id="whatWeHave" class="position-absolute d-flex justify-content-end w-100">
+                            <h3 class="text-yellow text-center display-5 text-chalk me-3"><strong>What We Have</strong></h3>
+                            <img src="img/yellow-stroke.png" alt="yellow stroke" class="object-fit-contain">
                         </div>
-    
+                        <h3 class="fw-bold text-center text-deepblue display-5">OUR PRODUCTS</h3>
                     </div>
                     <div class="container">
                         <div class="row">
@@ -197,14 +228,17 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="">
                 <div class="row">
-                    <div class="col-lg-7 bg-danger">
-                        <h3 class="fw-semibold text-deepblue display-3 text-end"><strong>Next Step</strong></h3>
+                    <div class="col-lg-8">
+                        <div class="d-flex">
+                            <img src="img/blue-stroke.png" alt="blue stroke" class="object-fit-cover object-fit-lg-contain me-3" style="max-width: 50vw; object-position: right top;">
+                                <h3 class="text-lightblue text-center display-5 text-chalk"><strong>Next Step</strong></h3>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div id="solutions" class="container">
                 <div class="row">
                     <div class="col-lg-8" style="margin-bottom: 7rem;">
                         <img src="img/whatyoucantry.png" alt="What You Can Try" width="100%">
@@ -237,12 +271,12 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-lightblue">
+            <div id="contact" class="bg-lightblue">
                 <div class="container">
-                    <div class="d-flex align-items-end" style="padding: 9rem 0;">
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-end" style="padding: 9rem 0;">
                         <div class="text-white me-4">
                             <img src="img/logo-innilabs-white.png" alt="Innilabs" height="110" class="mb-4">
-                            <h5 class="fw-bold text-center mb-0">PT CNA Innilabs Indonesia</h5>
+                            <h5 class="fw-bold text-lg-center mb-0">PT CNA Innilabs Indonesia</h5>
                         </div>
                         <div class="text-white">
                             <p>contact@innilabs.co.id</p>

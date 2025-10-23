@@ -254,6 +254,14 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
   color: #F18F00;
 }
 
+.text-yellow {
+  color: #D4D41C;
+}
+
+.text-chalk {
+  font-family: 'rubik_distressedregular';
+}
+
 .bg-lightblue {
   background-color: #46ADC5;
 }
@@ -284,4 +292,54 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
   color: #46ADC5;
   background-color: transparent;
   border: 0.5px solid #46ADC5;
+}
+
+.btn.btn-lightblue-outline {
+  color: #46ADC5;
+  background-color: #fff;
+  border: 0.5px solid #46ADC5;
+}
+
+.btn.btn-lightblue-outline svg path {
+  fill: #46ADC5;
+}
+
+.btn.btn-lightblue-outline:hover, .btn.btn-lightblue-outline:hover svg path, .btn.btn-lightblue-outline:active, .btn.btn-lightblue-outline:active svg path, .btn.btn-lightblue-outline:focus, .btn.btn-lightblue-outline:focus svg path, .btn.btn-lightblue-outline.active, .btn.btn-lightblue-outline.active svg path {
+  fill: #ffffff!important;
+  color: #ffffff;
+  background-color: #46ADC5;
+}
+
+#about {
+  border-radius: 50% 50% 50% 50% / 5% 5% 5% 5%; 
+  padding-bottom: 12rem;
+}
+
+#whoWeAre {
+  padding: 3rem; 
+  background-image: url('../img/oval-dashes.png'); 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+#whatWeHave {
+  transform: translateY(-100%);
+}
+
+@media (min-width: 992px) { 
+  #topNavbar {
+    height: 120px;
+  }
+  #about {
+    border-radius: 50% 50% 50% 50% / 20% 20% 10% 10%; 
+    padding-bottom: 12rem;
+  }
+  #whoWeAre {
+    transform: translateY(-64px); 
+    padding: 6rem 16rem 5rem; 
+  }
+  #whatWeHave {
+    transform: translateY(0%);
+  }
 }
