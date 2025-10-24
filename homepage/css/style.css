@@ -323,8 +323,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
   background-repeat: no-repeat;
 }
 
-#whatWeHave {
+#whatWeHave, #mainFocuses {
   transform: translateY(-100%);
+}
+
+div#heroText:has(#mainFocuses) {
+  margin-top: 7rem;
 }
 
 @media (min-width: 992px) { 
@@ -339,7 +343,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
     transform: translateY(-64px); 
     padding: 6rem 16rem 5rem; 
   }
-  #whatWeHave {
+}
+
+@media (min-width: 1800px) {
+  #whatWeHave, #mainFocuses {
     transform: translateY(0%);
+  }
+  div#heroText:has(#mainFocuses) {
+    margin-top: 0;
   }
 }
