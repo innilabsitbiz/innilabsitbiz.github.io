@@ -336,13 +336,24 @@ div#heroText:has(#mainFocuses) {
   max-width: 50vw;
 }
 
+.lazy-section {
+  opacity: 0;
+  transform: translateY(-40px); /* start higher */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  min-height: 300px; /* placeholder space before load */
+}
+
+.lazy-section.loaded {
+  opacity: 1;
+  transform: translateY(0); /* slide down into place */
+}
+
 @media (min-width: 992px) { 
   #topNavbar {
     height: 120px;
   }
   #about {
-    border-radius: 50% 50% 50% 50% / 20% 20% 10% 10%; 
-    padding-bottom: 12rem;
+    border-radius: 50% 50% 50% 50% / 20% 20% 10% 10%;
   }
   #whoWeAre {
     background-size: contain; 
