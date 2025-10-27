@@ -311,14 +311,14 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
 }
 
 #about {
-  border-radius: 50% 50% 50% 50% / 5% 5% 5% 5%; 
+  /* border-radius: 50% 50% 50% 50% / 5% 5% 5% 5%;  */
   padding-bottom: 12rem;
 }
 
 #whoWeAre {
   padding: 3rem; 
   background-image: url('../img/oval-dashes.png'); 
-  background-size: contain; 
+  background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
 }
@@ -331,6 +331,11 @@ div#heroText:has(#mainFocuses) {
   margin-top: 7rem;
 }
 
+#orangeStroke, #blueStroke, #yellowStroke {
+  height: 3rem;
+  max-width: 50vw;
+}
+
 @media (min-width: 992px) { 
   #topNavbar {
     height: 120px;
@@ -340,9 +345,15 @@ div#heroText:has(#mainFocuses) {
     padding-bottom: 12rem;
   }
   #whoWeAre {
+    background-size: contain; 
     transform: translateY(-64px); 
     padding: 6rem 16rem 5rem; 
   }
+
+  #orangeStroke, #blueStroke, #yellowStroke {
+    height: auto;
+  }
+
 }
 
 @media (min-width: 1800px) {
