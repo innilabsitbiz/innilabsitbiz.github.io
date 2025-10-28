@@ -12,14 +12,17 @@ $(document).ready(() => {
      }
   }
   
-  // initialize
-  isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft")
-  isScrolledTo("#whatWeHave", "animate__animated animate__slideInRight")
-  isScrolledTo("#nextStep", "animate__animated animate__slideInLeft")
-  
-  $(window).scroll(function() {
+  const scrollFunctions = () => {
     isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft")
     isScrolledTo("#whatWeHave", "animate__animated animate__slideInRight")
     isScrolledTo("#nextStep", "animate__animated animate__slideInLeft")
+  }
+  
+  // initialize
+  // scrollFunctions()
+    isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft")
+  
+  $(window).scroll(function() {
+    scrollFunctions()
   });
 })
