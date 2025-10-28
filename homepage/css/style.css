@@ -323,9 +323,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
   background-repeat: no-repeat;
 }
 
-#whatWeHave, #mainFocuses {
+/* #whatWeHave, #mainFocuses {
   transform: translateY(-100%);
-}
+} */
 
 div#heroText:has(#mainFocuses) {
   margin-top: 7rem;
@@ -377,5 +377,8 @@ div#heroText:has(#mainFocuses) {
   }
   div#heroText:has(#mainFocuses) {
     margin-top: 0;
+  }
+  .position-3xl-absolute {
+    position: absolute;
   }
 }
