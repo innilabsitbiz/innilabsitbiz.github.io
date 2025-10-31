@@ -1,0 +1,182 @@
+{
+    "en": {
+        "hero": {
+            "pointer": "3 Main<br /> Focuses",
+            "highlight": "BUILD THE FUTURE WITH US",
+            "sub": "We don't just deploy technology. We partner with you to architect the next era of your business."
+        },
+        "about": {
+            "title": "WE ARE",
+            "desc": "A specialized team in designing and delivering Cutting-edge Service Systems and Business Consultation infused with the power of AI"
+        },
+        "products": {
+            "pointer": "What We Have",
+            "title": "OUR PRODUCTS",
+            "products": [
+                {
+                    "name": "Innilabs Workflow Controller (WORKRAFT)",
+                    "desc": "A MSA component within your IT system that orchestrates and manages the flow of tasks and processes in a predefined sequence. It ensures that tasks are executed in the correct order and handles exceptions or deviations from the expected workflow."
+                },
+                {
+                    "name": "Innilabs Unified Messaging System (ILUMS)",
+                    "desc": "A comprehensive \"Unified Messaging Solution\" that can integrate and manage various messaging channels in coordination with administration, public institutions, and corporate CRM systems."
+                },
+                {
+                    "name": "Service Application for Innilabs OCR (SAILOC)",
+                    "desc": "SAILOC is an advanced Optical Character Recognition (OCR) service application designed to seamlessly extract, analyze, and process text from images, scanned documents, and handwritten notes. Built with cutting-edge AI and machine learning algorithms to deliver unparalleled accuracy, speed, and versatility."
+                },
+                {
+                    "name": "Innilabs API Gateway (API-SSAC)",
+                    "desc": "A powerful MSA component for API Management, which involves organizing, securing, and analyzing your APIs. It helps businesses control how their APIs are accessed and used, ensuring security, performance, and developer satisfaction."
+                },
+                {
+                    "name": "Innilabs Deployment By Approval (ILDEBYA)",
+                    "desc": "A component as DevOps lifecycle tool, that allows your team to set up approval workflows for changes made to code repositories. This system enables teams to enforce review and approval processes before changes are merged into the codebase, ensuring quality control, compliance, and collaboration among team members."
+                },
+                {
+                    "name": "Artificial Intelligence Framework Objects (AIFO)",
+                    "desc": "These ready-to-use components streamline the creation of AI-driven applications, enabling developers and organizations to focus on innovation rather than reinventing the wheel. We provides the building blocks you need to develop, deploy, and scale cutting-edge AI solutions efficiently."
+                }
+            ]
+        },
+        "solutions": {
+            "pointer": "Next Step",
+            "title": "WHAT YOU CAN TRY WITH US",
+            "options": [
+                {
+                    "title": "Custom-Built Service System",
+                    "desc": "Design and launch an AI-native System of Service tailored to your workflows, compliance needs, and growth targets."
+                },
+                {
+                    "title": "Existing System Enhancement",
+                    "desc": "Supercharge your current stack with AI, automation, and orchestration—no rip-and-replace."
+                },
+                {
+                    "title": "SHARE YOUR BUSINESS IDEA WITH US",
+                    "desc": "Bring your concept or pain point—we'll co-ideate, validate with rapid prototypes, and map ROI."
+                }
+            ],
+            "action": "Send Email"
+        }
+    },
+    "id": {
+        "hero": {
+            "pointer": "3 Fokus<br />Utama",
+            "highlight": "TEKNOLOGI MASA DEPAN",
+            "sub": "Tidak cuma menerapkan teknologi. Kami adalah Partner untuk era baru bisnis Anda."
+        },
+        "about": {
+            "title": "KAMI",
+            "desc": "Tim spesialis dalam merancang dan mengembangkan <em>Service System</em> mutakhir dan Konsultasi Bisnis dengan pengaplikasian teknologi AI"
+        },
+        "products": {
+            "pointer": "Yang Kami Punya",
+            "title": "PRODUK KAMI",
+            "products": [
+                {
+                    "name": "Innilabs Workflow Controller (WORKRAFT)",
+                    "desc": "Komponen MSA dalam sistem IT Anda untuk mengatur dan mengelola flow tugas dan proses dalam urutan yang telah ditentukan sebelumnya. Komponen ini memastikan tugas dieksekusi dalam urutan yang benar dan menangani pengecualian atau penyimpangan dari alur kerja yang diharapkan."
+                },
+                {
+                    "name": "Innilabs Unified Messaging System (ILUMS)",
+                    "desc": "\"Unified Messaging Solution\" yang komprehensif dan dapat mengintegrasikan dan mengelola berbagai saluran pesan dalam koordinasi dengan administrasi, lembaga publik, dan sistem CRM perusahaan."
+                },
+                {
+                    "name": "Service Application for Innilabs OCR (SAILOC)",
+                    "desc": "SAILOC adalah aplikasi layanan Optical Character Recognition (OCR) canggih yang dirancang untuk mengekstrak, menganalisis, dan memproses teks dari gambar, dokumen pindaian, dan catatan tulisan tangan dengan mudah. ​​Dibangun dengan AI dan algoritma machine learning mutakhir untuk menghadirkan akurasi, kecepatan, dan fleksibilitas."
+                },
+                {
+                    "name": "Innilabs API Gateway (API-SSAC)",
+                    "desc": "Komponen MSA yang andal untuk Manajemen API, yang mencakup pengorganisasian, pengamanan, dan analisis API Anda. Komponen ini membantu bisnis mengontrol cara API mereka diakses dan digunakan, memastikan keamanan, performa, dan kepuasan dalam pengembangan sistem."
+                },
+                {
+                    "name": "Innilabs Deployment By Approval (ILDEBYA)",
+                    "desc": "Komponen life cycle untuk DevOps yang memungkinkan tim Anda menyiapkan approval workflow untuk perubahan yang dibuat pada repositori kode. Sistem ini memungkinkan tim untuk menerapkan proses peninjauan dan persetujuan sebelum perubahan digabungkan ke dalam code base, memastikan quality control, compliance (kepatuhan), dan kolaborasi antar anggota tim."
+                },
+                {
+                    "name": "Artificial Intelligence Framework Objects (AIFO)",
+                    "desc": "Komponen siap pakai ini menyederhanakan pembuatan aplikasi berbasis AI, memungkinkan developer dan organisasi untuk berfokus pada inovasi tanpa reenventing the wheel (membuat kembali). Kami menyediakan fondasi yang Anda butuhkan untuk mengembangkan, menerapkan, dan meningkatkan skala solusi AI mutakhir secara efisien."
+                }
+            ]
+        },
+        "solutions": {
+            "pointer": "Selanjutnya",
+            "title": "ANDA BISA MENCOBA",
+            "options": [
+                {
+                    "title": "Custom-Built Service System",
+                    "desc": "Rancang dan luncurkan Service System berbasis AI yang disesuaikan dengan workflow, kebutuhan copliance, dan growth target Anda."
+                },
+                {
+                    "title": "Existing System Enhancement",
+                    "desc": "Tingkatkan stack Anda saat ini dengan AI, automation, dan orchestration—no rip-and-replace."
+                },
+                {
+                    "title": "KEMBANGKAN IDE BISNIS ANDA BERSAMA KAMI",
+                    "desc": "Bagikan konsep atau pain point Anda—kami akan kembangkan ide-ide Anda, memvalidasi dengan rapid prototypes, dan memetakan ROI-nya."
+                }
+            ],
+            "action": "Kirim Email"
+        }
+    },
+    "kr": {
+        "hero": {
+            "pointer": "3가지<br /> 주요 초점",
+            "highlight": "우리와 함께 미래를 건설하세요",
+            "sub": "저희는 단순히 기술을 배포하는 데 그치지 않습니다. 고객과 협력하여 비즈니스의 다음 시대를 설계합니다."
+        },
+        "about": {
+            "title": "우리는",
+            "desc": "AI의 힘을 빌려 최첨단 서비스 시스템과 비즈니스 컨설팅을 설계하고 제공하는 전문 팀입니다."
+        },
+        "products": {
+            "pointer": "우리가 가진 것",
+            "title": "우리의 제품",
+            "products": [
+                {
+                    "name": "Innilabs Workflow Controller (WORKRAFT)",
+                    "desc": "IT 시스템 내의 MSA(운영 관리 시스템) 구성 요소로, 미리 정의된 순서에 따라 작업 및 프로세스 흐름을 조율하고 관리합니다. 작업이 올바른 순서대로 실행되도록 보장하고 예상 워크플로에서 벗어나는 예외나 편차를 처리합니다."
+                },
+                {
+                    "name": "Innilabs Unified Messaging System (ILUMS)",
+                    "desc": "행정부, 공공기관, 기업 CRM 시스템과 연계하여 다양한 메시징 채널을 통합하고 관리할 수 있는 종합적인 \"통합 메시징 솔루션\"입니다."
+                },
+                {
+                    "name": "Service Application for Innilabs OCR (SAILOC)",
+                    "desc": "SAILOC은 이미지, 스캔 문서, 필기 노트에서 텍스트를 완벽하게 추출, 분석 및 처리하도록 설계된 고급 광학 문자 인식(OCR) 서비스 애플리케이션입니다. 최첨단 AI 및 머신 러닝 알고리즘을 기반으로 구축되어 탁월한 정확성, 속도, 그리고 다재다능함을 제공합니다."
+                },
+                {
+                    "name": "Innilabs API Gateway (API-SSAC)",
+                    "desc": "API 관리를 위한 강력한 MSA(Microsoft Azure Analytics) 구성 요소로, API 구성, 보안 및 분석을 담당합니다. 기업이 API 액세스 및 사용 방식을 제어하여 보안, 성능 및 개발자 만족도를 보장할 수 있도록 지원합니다."
+                },
+                {
+                    "name": "Innilabs Deployment By Approval (ILDEBYA)",
+                    "desc": "DevOps 라이프사이클 도구로서, 팀이 코드 저장소 변경 사항에 대한 승인 워크플로를 설정할 수 있도록 지원하는 구성 요소입니다. 이 시스템을 통해 팀은 변경 사항을 코드베이스에 병합하기 전에 검토 및 승인 프로세스를 시행하여 품질 관리, 규정 준수 및 팀원 간의 협업을 보장할 수 있습니다."
+                },
+                {
+                    "name": "Artificial Intelligence Framework Objects (AIFO)",
+                    "desc": "이러한 즉시 사용 가능한 구성 요소는 AI 기반 애플리케이션 개발 과정을 간소화하여 개발자와 조직이 기존 시스템을 재창조하는 대신 혁신에 집중할 수 있도록 지원합니다. 최첨단 AI 솔루션을 효율적으로 개발, 배포 및 확장하는 데 필요한 기본 요소를 제공합니다."
+                }
+            ]
+        },
+        "solutions": {
+            "pointer": "다음 단계",
+            "title": "우리와 함께 시도할 수 있는 것",
+            "options": [
+                {
+                    "title": "맞춤형 서비스 시스템",
+                    "desc": "귀사의 워크플로, 규정 준수 요구 사항, 성장 목표에 맞춰 AI 기반 서비스 시스템을 설계하고 출시하세요."
+                },
+                {
+                    "title": "기존 시스템 개선",
+                    "desc": "AI, 자동화, 오케스트레이션을 통해 현재 스택을 대폭 강화하세요. 전면 교체는 필요 없습니다."
+                },
+                {
+                    "title": "귀하의 사업 아이디어를 저희와 공유해 주세요",
+                    "desc": "귀하의 컨셉이나 문제점을 가져오시면, 우리는 함께 아이디어를 내고, 신속한 프로토타입으로 검증하고, ROI를 매핑해 드리겠습니다."
+                }
+            ],
+            "action": "이메일 보내기"
+        }
+    }
+}

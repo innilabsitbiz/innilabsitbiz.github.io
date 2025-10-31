@@ -64,9 +64,9 @@
                             </li>
                         </ul>
                         <div class="d-flex p-3">
-                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle fw-bold">EN</button>
-                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle">ID</button>
-                            <button class="btn border-0 fs-5 p-0 mx-1 rounded-circle">KR</button>
+                            <button id="enLang" class="btn border-0 fs-5 p-0 mx-1 rounded-circle fw-bold">EN</button>
+                            <button id="idLang" class="btn border-0 fs-5 p-0 mx-1 rounded-circle">ID</button>
+                            <button id="krLang" class="btn border-0 fs-5 p-0 mx-1 rounded-circle">KR</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <img id="orangeStroke" class="object-fit-cover object-fit-lg-contain me-2" src="img/orange-stroke.png" alt="orange stroke">
                         <h3 class="text-orange text-center display-5 text-chalk"><strong>3 Main<br /> Focuses</strong></h3>
                     </div>
-                    <div class="">
+                    <div id="heroMessage">
                         <h3 class="fw-semibold text-center text-deepblue display-3"><strong>BUILD THE FUTURE WITH US</strong></h3>
                         <p class="text-center text-dark fs-5">We don't just deploy technology. We partner with you to architect the next era of your business.</p>
                     </div>
@@ -130,13 +130,13 @@
                             <h3 class="text-yellow text-center display-5 text-chalk me-3"><strong>What We Have</strong></h3>
                             <img id="yellowStroke" src="img/yellow-stroke.png" alt="yellow stroke" class="object-fit-cover object-fit-lg-contain" style="object-position: left top;">
                         </div>
-                        <h3 class="fw-bold text-center text-deepblue display-5">OUR PRODUCTS</h3>
+                        <h3 id="productsTitle" class="fw-bold text-center text-deepblue display-5">OUR PRODUCTS</h3>
                     </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="workraft">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/workraft.png" alt="WORKRAFT">
                                         </div>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="ilums">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/ilums.png" alt="ILUMS">
                                         </div>
@@ -158,7 +158,7 @@
                             </div>
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="sailoc">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/sailoc.png" alt="SAILOC">
                                         </div>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="apissac">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/apissac.png" alt="API-SSAC">
                                         </div>
@@ -180,7 +180,7 @@
                             </div>
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="ildebya">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/ildebya.png" alt="ILDEBYA">
                                         </div>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-lg-4 p-4">
                                 <div class="shadow-sm rounded-5 p-4 h-100">
-                                    <div class="">
+                                    <div id="aifo">
                                         <div class="d-flex justify-content-center align-items-center bg-thinblue rounded-5 mb-4 w-100" style="height: 250px;">
                                             <img src="img/aifo.png" alt="AIFO">
                                         </div>
@@ -220,19 +220,19 @@
                         <img src="img/whatyoucantry.png" alt="What You Can Try" width="100%">
                     </div>
                     <div class="col-lg-4 px-5" style="margin-bottom: 7rem;">
-                        <h3 class="fw-bold text-lightblue display-3 mb-4">WHAT YOU CAN TRY WITH US</h3>
+                        <h3 id="solutionsTitle" class="fw-bold text-lightblue display-3 mb-4">WHAT YOU CAN TRY WITH US</h3>
                         <div>
-                            <h5 class="fw-bold fs-2">Custom-Built Service System</h5>
-                            <p>Design and launch an AI-native System of Service tailored to your workflows, compliance needs, and growth targets.</p>
+                            <h5 id="opTitle1" class="fw-bold fs-2">Custom-Built Service System</h5>
+                            <p id="opDesc1">Design and launch an AI-native System of Service tailored to your workflows, compliance needs, and growth targets.</p>
                         </div>
                         <div>
-                            <h5 class="fw-bold fs-2">Existing System Enhancement</h5>
-                            <p>Supercharge your current stack with AI, automation, and orchestration—no rip-and-replace.</p>
+                            <h5 id="opTitle2" class="fw-bold fs-2">Existing System Enhancement</h5>
+                            <p id="opDesc2">Supercharge your current stack with AI, automation, and orchestration—no rip-and-replace.</p>
                         </div>
                     </div>
                     <div class="col-12" style="margin-bottom: 12rem;">
-                        <h3 class="fw-bold text-center text-deepblue display-5">SHARE YOUR BUSINESS IDEA WITH US</h3>
-                        <p class="text-center">Bring your concept or pain point—we'll co-ideate, validate with rapid prototypes, and map ROI.</p>
+                        <h3 id="opTitle3" class="fw-bold text-center text-deepblue display-5">SHARE YOUR BUSINESS IDEA WITH US</h3>
+                        <p id="opDesc3" class="text-center">Bring your concept or pain point—we'll co-ideate, validate with rapid prototypes, and map ROI.</p>
                         <div class="d-flex justify-content-center">
                             <a href="mailto:contact@innilabs.co.id" class="btn btn-lightblue rounded-3 px-4 py-2">
                                 <span class="fs-5 fw-bold me-2">Send Email</span>
