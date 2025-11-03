@@ -61,7 +61,7 @@
     },
     "id": {
         "hero": {
-            "pointer": "3 Fokus<br />Utama",
+            "pointer": "3 Main<br /> Focuses",
             "highlight": "TEKNOLOGI MASA DEPAN",
             "sub": "Tidak hanya menerapkan teknologi. Kami adalah Partner untuk era baru bisnis Anda."
         },
@@ -70,7 +70,7 @@
             "desc": "Expert di bidang Service System dan Aplikasi berbasis AI"
         },
         "products": {
-            "pointer": "Yang Kami Punya",
+            "pointer": "What We Have",
             "title": "PRODUK KAMI",
             "products": [
                 {
@@ -100,7 +100,7 @@
             ]
         },
         "solutions": {
-            "pointer": "Selanjutnya",
+            "pointer": "Next Step",
             "title": "ANDA BISA MENCOBA",
             "options": [
                 {
@@ -121,16 +121,16 @@
     },
     "kr": {
         "hero": {
-            "pointer": "핵심 세 가지",
+            "pointer": "3 Main<br /> Focuses",
             "highlight": "함께 미래를 만들어 갑니다.",
             "sub": "고객과 함께 새로운 비즈니스 시대를 열어가는 기술을 제시합니다."
         },
         "about": {
             "title": "우리는",
-            "desc": "서비스 시스템과 AI 기반을 포함하는 다양한 소프트웨어 분야의 전문가입니다."
+            "desc": "서비스 시스템과 다양한 소프트웨어 분야의 전문가입니다. AI도 물론 포함해서요."
         },
         "products": {
-            "pointer": "우리의 기술",
+            "pointer": "What We Have",
             "title": "우리의 제품",
             "products": [
                 {
@@ -160,7 +160,7 @@
             ]
         },
         "solutions": {
-            "pointer": "다음 단계",
+            "pointer": "Next Step",
             "title": "함께 시도해 볼 수 있는 좋은 방법",
             "options": [
                 {
