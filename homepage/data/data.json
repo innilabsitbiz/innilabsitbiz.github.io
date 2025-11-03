@@ -7,7 +7,7 @@
         },
         "about": {
             "title": "WE ARE",
-            "desc": "A specialized team in designing and delivering Cutting-edge Service Systems and Business Consultation infused with the power of AI"
+            "desc": "Experts of Service Systems and Application, AI-based."
         },
         "products": {
             "pointer": "What We Have",
@@ -63,11 +63,11 @@
         "hero": {
             "pointer": "3 Fokus<br />Utama",
             "highlight": "TEKNOLOGI MASA DEPAN",
-            "sub": "Tidak cuma menerapkan teknologi. Kami adalah Partner untuk era baru bisnis Anda."
+            "sub": "Tidak hanya menerapkan teknologi. Kami adalah Partner untuk era baru bisnis Anda."
         },
         "about": {
             "title": "KAMI",
-            "desc": "Tim spesialis dalam merancang dan mengembangkan <em>Service System</em> mutakhir dan Konsultasi Bisnis dengan pengaplikasian teknologi AI"
+            "desc": "Expert di bidang Service System dan Aplikasi berbasis AI"
         },
         "products": {
             "pointer": "Yang Kami Punya",
@@ -113,7 +113,7 @@
                 },
                 {
                     "title": "KEMBANGKAN IDE BISNIS ANDA BERSAMA KAMI",
-                    "desc": "Bagikan konsep atau pain point Anda—kami akan kembangkan ide-ide Anda, memvalidasi dengan rapid prototypes, dan memetakan ROI-nya."
+                    "desc": "Bagikan konsep atau pain point Anda—kami akan kembangkan ide-ide Anda, validasi dengan rapid prototypes, dan petakan ROI-nya."
                 }
             ],
             "action": "Kirim Email"
@@ -127,7 +127,7 @@
         },
         "about": {
             "title": "우리는",
-            "desc": "AI의 힘을 빌려 최첨단 서비스 시스템과 비즈니스 컨설팅을 설계하고 제공하는 전문 팀입니다."
+            "desc": "전문가의 서비스 시스템 및 AI 응용 프로그램 제공."
         },
         "products": {
             "pointer": "우리가 가진 것",
