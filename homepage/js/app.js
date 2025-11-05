@@ -1,30 +1,37 @@
 $(document).ready(() => {
   const isScrolledTo = (target, classes) => {
-     var hT = $(target).offset().top,
-         hH = $(target).outerHeight(),
-         wH = $(window).height(),
-         wS = $(this).scrollTop();
-     if (wS > (hT+hH-wH)){
-         $(target)
-            .addClass(`${classes} opacity-100`)
-            .removeClass("opacity-0")
-            .attr("transition", "opacity 2s ease-in-out")
-     }
-  }
-  
+    const $el = $(target);
+    if ($el.length === 0) return;
+
+    const hT = $el.offset().top;
+    const hH = $el.outerHeight();
+    const wH = $(window).height();
+    const wS = $(window).scrollTop(); // fixed: should use window, not “this”
+
+    // Check if element is in viewport
+    if (wS + wH > hT + hH * 0.2) {
+      // Add if not already animated
+      if (!$el.hasClass("opacity-100")) {
+        $el.addClass(`${classes} opacity-100`);
+      }
+    }
+  };
+
   const scrollFunctions = () => {
-    isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft")
-    isScrolledTo("#whatWeHave", "animate__animated animate__slideInRight")
-    isScrolledTo("#nextStep", "animate__animated animate__slideInLeft")
-  }
-  
-  // initialize
-  // scrollFunctions()
-    isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft")
-  
-  $(window).scroll(function() {
-    scrollFunctions()
+    isScrolledTo("#mainFocuses", "animate__animated animate__slideInLeft");
+    isScrolledTo("#whatWeHave", "animate__animated animate__slideInRight");
+    isScrolledTo("#nextStep", "animate__animated animate__slideInLeft");
+  };
+
+  // Debounce scroll events for better performance
+  let timeout;
+  $(window).on("scroll", function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(scrollFunctions, 50);
   });
+
+  // Run immediately on load (for reload scenarios)
+  scrollFunctions();
   
   const setContent = (content) => {
 

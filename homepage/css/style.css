@@ -348,6 +348,10 @@ div#heroText:has(#mainFocuses) {
   transform: translateY(0); /* slide down into place */
 }
 
+.my-6 {
+  margin: 8rem 0;
+}
+
 @media (min-width: 992px) { 
   #topNavbar {
     height: 120px;
@@ -368,6 +372,10 @@ div#heroText:has(#mainFocuses) {
   }
   .rounded-lg-circle {
     border-radius: 50%;
+  }
+
+  .my-lg-6 {
+    margin: 8rem 0;
   }
 }
 

@@ -1,7 +1,7 @@
 {
     "en": {
         "hero": {
-            "pointer": "3 Main<br /> Focuses",
+            "pointer": "3 Main Focuses",
             "highlight": "BUILD THE FUTURE WITH US",
             "sub": "We don't just deploy technology. We partner with you to architect the next era of your business."
         },
@@ -61,7 +61,7 @@
     },
     "id": {
         "hero": {
-            "pointer": "3 Main<br /> Focuses",
+            "pointer": "3 Main Focuses",
             "highlight": "TEKNOLOGI MASA DEPAN",
             "sub": "Tidak hanya menerapkan teknologi. Kami adalah Partner untuk era baru bisnis Anda."
         },
@@ -121,7 +121,7 @@
     },
     "kr": {
         "hero": {
-            "pointer": "3 Main<br /> Focuses",
+            "pointer": "3 Main Focuses",
             "highlight": "함께 미래를 만들어 갑니다.",
             "sub": "고객과 함께 새로운 비즈니스 시대를 열어가는 기술을 제시합니다."
         },
