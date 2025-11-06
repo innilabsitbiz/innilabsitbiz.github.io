@@ -1,3 +1,5 @@
 inner.txt
 .DS_Store
 local-only.md
+homepage/node_modules/
+homepage/package-lock.json
