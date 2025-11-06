@@ -318,7 +318,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, div, a, button {
 #whoWeAre {
   padding: 3rem; 
   background-image: url('../img/oval-dashes.png'); 
-  background-size: cover; 
+  background-size: contain; 
   background-position: center; 
   background-repeat: no-repeat;
 }
