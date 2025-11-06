@@ -3,3 +3,4 @@ inner.txt
 local-only.md
 homepage/node_modules/
 homepage/package-lock.json
+homepage/dist/
